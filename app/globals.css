@@ -1,42 +1,66 @@
 @import "tailwindcss";
 
 @theme {
-  --text-12: 12px;
-  --text-14: 14px;
-  --text-16: 16px;
-  --text-18: 18px;
-  --text-20: 20px;
-  --text-22: 22px;
-  --text-24: 24px;
-  --text-26: 26px;
-  --text-28: 28px;
-  --text-30: 30px;
-  --text-32: 32px;
-  --text-35: 35px;
-  --text-36: 36px;
-  --text-40: 40px;
-  --text-42: 42px;
-  --text-44: 44px;
-  --text-45: 45px;
-  --text-46: 46px;
-  --text-48: 48px;
-  --text-50: 50px;
-  --text-60: 60px;
-  --text-66: 66px;
-  --text-70: 70px;
-  --text-80: 80px;
-  --text-82: 82px;
-  --text-90: 90px;
-  --text-100: 100px;
-  --text-110: 110px;
-  --text-120: 120px;
-  --text-140: 140px;
-  --text-160: 160px;
+ 
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-22: 22px;
+  --spacing-24: 24px;
+  --spacing-26: 26px;
+  --spacing-28: 28px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-44: 44px;
+  --spacing-46: 46px;
+  --spacing-45: 45px;
+  --spacing-50: 50px;
+  --spacing-52: 52px;
+  --spacing-54: 54px;
+  --spacing-55: 55px;
+  --spacing-57: 57px;
+  --spacing-60: 60px;
+  --spacing-70: 70px;
+  --spacing-80: 80px;
+  --spacing-90: 90px;
+  --spacing-100: 100px;
+  --spacing-120: 120px;
+  --spacing-130: 130px;
+  --spacing-140: 140px;
+  --spacing-150: 150px;
+  --spacing-160: 160px;
+  --spacing-180: 180px;
+  --spacing-170: 170px;
+  --spacing-190: 190px;
+  --spacing-200: 200px;
+  --spacing-210: 210px;
+  --spacing-220: 220px;
+  --spacing-230: 230px;
+  --spacing-240: 240px;
+  --spacing-250: 250px;
+
+  --spacing-90p: 90%;
+  --spacing-100p: 100%;
+  --spacing-101p: 101%;
+  --spacing-110p: 110.01%;
+  --spacing-120p: 120%;
+  --spacing-130p: 130%;
+  --spacing-140p: 140%;
 
   --color-lime: #d9ff00;
   --color-dark: #111111;
   --color-white: #ffffff;
   --color-gray: #a7a7a7;
+  --color-yello: #DFF624;
+  --color-text : #4D4D4D;
+  --radius-10: 10px;
+   --radius-4: 4px;
+  --radius-5: 5px;
+  --radius-8: 8px;
+  --radius-15: 15px;
+  --radius-20: 20px;
+  --radius-115: 115px;
+
 }
 
 @layer base {
@@ -66,20 +90,15 @@
   .h1 {
     font-size: var(--text-70);
   }
-  .btn-primary {
-  @apply px-6 py-3 rounded-full text-black font-termina text-[var(--text-16)] bg-[var(--color-primary)] hover:opacity-80 transition;
-}
 
+}
+@layer components {
+    
+.btn-primary {
+  @apply px-10 py-3 text-[10px] rounded-10 bg-yello  text-black shadow hover:opacity-90;
+}
 .btn-outline {
-  @apply px-6 py-3 rounded-full border border-black text-black font-termina text-[var(--text-16)] hover:bg-black hover:text-white transition;
-}
-
-.service-tag {
-  @apply px-5 py-2 rounded-full border border-[#999] text-[var(--text-14)] text-[#444] whitespace-nowrap;
-}
-
-.card {
-  @apply rounded-xl overflow-hidden shadow-md bg-white;
+  @apply px-6 py-3 rounded-10 border text-[10px] border-black text-black  hover:bg-black hover:text-white transition;
 }
 
 }

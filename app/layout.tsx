@@ -6,15 +6,7 @@ const termina = localFont({
   src: [
     {
       path: "../public/fonts/termina/TerminaTest-Regular.otf",
-      style: "normal",
-    },
-    {
-      path: "../public/fonts/termina/TerminaTest-Medium.otf",
-      style: "normal",
-    },
-    {
-      path: "../public/fonts/termina/TerminaTest-Bold.otf",
-      style: "normal",
+     style : "normal" ,
     },
   ],
   variable: "--font-termina",
