@@ -47,10 +47,10 @@
   --spacing-130p: 130%;
   --spacing-140p: 140%;
 
-  --color-lime: #d9ff00;
+  --color-lime: #F2F0EA;
   --color-dark: #111111;
   --color-white: #ffffff;
-  --color-gray: #a7a7a7;
+  --color-gray: #8D8D8D;
   --color-yello: #DFF624;
   --color-text : #4D4D4D;
   --radius-10: 10px;
@@ -102,3 +102,4 @@
 }
 
 }
+
