@@ -1,15 +1,33 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import localFont from "next/font/local";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const termina = localFont({
+  src: [
+    {
+      path: "../public/fonts/termina/TerminaTest-Regular.otf",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/termina/TerminaTest-Medium.otf",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/termina/TerminaTest-Bold.otf",
+      style: "normal",
+    },
+  ],
+  variable: "--font-termina",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const ivy = localFont({
+  src: [
+    {
+      path: "../public/fonts/ivy/ivy-presto-display.otf",
+      style: "normal",
+    },
+  ],
+  variable: "--font-ivy",
 });
 
 export const metadata: Metadata = {
@@ -23,12 +41,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+    <html lang="en" className={`${termina.variable} ${ivy.variable}`}>
+      <body>{children}</body>
     </html>
   );
 }
