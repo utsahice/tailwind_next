@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <main className="min-h-screen w-ful">
+    <main className="w-ful">
       <section className="relative w-full h-[560px] md:h-[600px] overflow-hidden">
         <div className="w-full h-[600px] relative overflow-hidden ">
           <img

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function OurServices() {
   return (
-    <section className="w-full px-10 pb-9 bg-lime flex justify-center">
+    <section className="w-full px-10 bg-lime flex justify-center">
       <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-16">
         {/* Left text section */}
         <div className="flex flex-col gap-6">

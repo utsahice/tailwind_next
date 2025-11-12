@@ -4,6 +4,7 @@ import OurServices from "@/app/Service/OurServices";
 import RetailPartners from "./Retail/RetailPartner";
 import OurWork from "./work/OurWork";
 import GlazedGlossPage from "./Glazed/GlazedGloss";
+import TransformingBrands from "./transforming/Tarsforming";
 export default function Home() {
   return (
     <>
@@ -12,6 +13,7 @@ export default function Home() {
       <RetailPartners/>
       <OurWork/>
       <GlazedGlossPage/>
+      <TransformingBrands/>
     </>
   );
 }

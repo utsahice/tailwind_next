@@ -38,6 +38,10 @@
   --spacing-230: 230px;
   --spacing-240: 240px;
   --spacing-250: 250px;
+  --spacing-650: 650px;
+  --spacing-70p: 70%;
+  --spacing-80p: 80%;
+  --spacing-50p: 50%;
 
   --spacing-90p: 90%;
   --spacing-100p: 100%;
@@ -53,6 +57,7 @@
   --color-gray: #8D8D8D;
   --color-yello: #DFF624;
   --color-text : #4D4D4D;
+  --color-sm: #7A5238;
   --radius-10: 10px;
    --radius-4: 4px;
   --radius-5: 5px;
