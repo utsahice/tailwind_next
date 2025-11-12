@@ -57,6 +57,7 @@
   --color-gray: #8D8D8D;
   --color-yello: #DFF624;
   --color-text : #4D4D4D;
+  --color-expert: #222222;
   --color-sm: #7A5238;
   --radius-10: 10px;
    --radius-4: 4px;
@@ -100,7 +101,7 @@
 @layer components {
     
 .btn-primary {
-  @apply px-10 py-3 text-[10px] rounded-10 bg-yello  text-black shadow hover:opacity-90;
+  @apply px-10 py-3 text-[12px] rounded-10 bg-yello  text-black shadow hover:opacity-90;
 }
 .btn-outline {
   @apply px-6 py-3 rounded-10 border text-[10px] border-black text-black  hover:bg-black hover:text-white transition;

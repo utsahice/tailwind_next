@@ -34,7 +34,7 @@ export default function GlazedGlossPage() {
         <p className="font-termina text-xs tracking-widest text-gray-500 uppercase mb-2">
           Who We Are
         </p>
-        <h2 className="text-4xl font-ivy mb-6">We’re Glazed Gloss</h2>
+        <h2 className="text-4xl font-semibold font-ivy mb-6">We’re Glazed Gloss</h2>
         <p className="text-[15px] font-termina text-gray-700 leading-relaxed mb-4">
           Based in Beverly Hills, CA, the hub of the film and commercial industry, the executive team of GLAZED GLOSS CREATIVE COLLECTIVE brings a wealth of historical expertise in retail sales and execution. Each C-Suite executive has over 25 years of experience within the core retail team. Previous brand launches & employers of team members include renowned beauty industry giants such as TOM FORD, Tom Ford Beauty, Estée Lauder, L'Oréal, Clarins, Chanel, LVMH, NuFace, Bloomingdales, Sephora, ULTA, Neiman Marcus, Saks 5th Ave., New York Fashion Commission, and Hearst Group Publications.
         </p>

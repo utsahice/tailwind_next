@@ -5,6 +5,7 @@ import RetailPartners from "./Retail/RetailPartner";
 import OurWork from "./work/OurWork";
 import GlazedGlossPage from "./Glazed/GlazedGloss";
 import TransformingBrands from "./transforming/Tarsforming";
+import BeautyExperts from "./Expert/BeutyExpert";
 export default function Home() {
   return (
     <>
@@ -14,6 +15,7 @@ export default function Home() {
       <OurWork/>
       <GlazedGlossPage/>
       <TransformingBrands/>
+      <BeautyExperts/>
     </>
   );
 }

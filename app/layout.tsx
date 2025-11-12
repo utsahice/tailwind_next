@@ -15,7 +15,7 @@ const termina = localFont({
 const ivy = localFont({
   src: [
     {
-      path: "../public/fonts/ivy/ivy-presto-display.otf",
+      path: "../public/fonts/ivy/fonnts-Text-Light.otf",
       style: "normal",
     },
   ],

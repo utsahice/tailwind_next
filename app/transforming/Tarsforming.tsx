@@ -19,11 +19,11 @@ export default function TransformingBrands() {
           },
         ].map((item, i) => (
           <div key={i}>
-            <p className="text-sm uppercase font-termina tracking-widest text-gray-600">
+            <p className="text-black uppercase font-termina tracking-widest ">
               {item.title}
             </p>
-            <p className="text-4xl text-text font-ivy text-text">{item.value}</p>
-            <p className="text-sm font-termina uppercase tracking-widest text-gray-600">
+            <p className="text-4xl font-ivy text-sm">{item.value}</p>
+            <p className="text-black font-termina uppercase tracking-widest ">
               {item.desc}
             </p>
           </div>
@@ -33,7 +33,7 @@ export default function TransformingBrands() {
       <div className="max-w-9xl bg-gray mx-auto px-6 flex flex-col lg:flex-row gap-12">
         
         <div className="w-full lg:w-1/4 flex justify-center lg:justify-start">
-          <div className="overflow-hidden absolute top-[3100px] left-[2%] rounded-lg shadow-lg max-w-[280px] h-[650]">
+          <div className="overflow-hidden absolute top-[3150px] left-[2%] rounded-lg shadow-lg max-w-[280px] h-[650]">
             <Image
               src="/transforming/1.jpg"
               alt="Sephora building"

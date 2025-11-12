@@ -39,7 +39,7 @@ export default function OurWork() {
             {works.map((work) => (
               <div
                 key={work.title}
-                className="flex flex-col h-full bg-white rounded-15 overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300">
+                className="flex flex-col h-full bg-transparent overflow-hidden hover transition-all duration-300">
                 {/* Image */}
                 <div className="aspect-[4/5] w-full overflow-hidden ">
                   <img
@@ -50,7 +50,7 @@ export default function OurWork() {
                 </div>
 
                 {/* Content */}
-                <div className="flex flex-col justify-between flex-grow p-4 bg-gray">
+                <div className="flex flex-col justify-between flex-grow p-4 ">
                   <div>
                     <h3 className="text-white mb-1 font-ivy">{work.title}</h3>
                     <p className="text-yello text-sm font-medium font-termina mb-3">
@@ -60,7 +60,7 @@ export default function OurWork() {
 
                   {/* Button perfectly left-aligned */}
                   <div className="mt-auto">
-                    <button className="text-white font-termina text-xs underline text-left block">
+                    <button className="text-white font-termina text-xs underline decoration-yello decoration-2 text-left block">
                       VIEW CASE STUDY
                     </button>
                   </div>
