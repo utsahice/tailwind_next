@@ -20,7 +20,7 @@ export default function BeautyExperts() {
       </div>
 
       {/* Main Content */}
-      <div className="flex flex-col lg:flex-row items-start lg:items-stretch gap-10">
+      <div className="flex flex-col lg:flex-row lg:items-stretch gap-10">
         {/* Left Content */}
         <div className="flex-1 space-y-6">
           {[
@@ -42,7 +42,7 @@ export default function BeautyExperts() {
           ].map((item, index) => (
             <div
               key={index}
-              className="flex items-start gap-4 bg-white rounded-2xl shadow-sm px-6 py-6"
+              className="flex gap-4 bg-white rounded-2xl shadow-sm px-6 py-6"
             >
               <p className="text-7xl text-sm font-ivy">{item.num}</p>
               <div>
