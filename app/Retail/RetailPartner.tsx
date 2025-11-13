@@ -22,7 +22,7 @@ export default function RetailPartners() {
 
   return (
     <>
-    <section className="w-full bg-gray py-10 flex flex-col items-center">
+    <section className="w-full bg-gray py-10 flex flex-col text-center items-center">
       <h2 className="text-center font-ivy text-[32px] md:text-[40px] text-yello mb-10">
         OUR RETAIL PARTNERS
       </h2>

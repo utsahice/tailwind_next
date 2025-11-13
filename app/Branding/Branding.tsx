@@ -41,7 +41,7 @@ export default function Branding() {
 
   return (
     <section className="w-full bg-gray py-24 text-center">
-      <div className="max-w-[1300px] mx-auto">
+      <div className="max-w-auto mx-auto">
         {/* Headings */}
         <p className="text-[11px] uppercase tracking-[0.15em] text-white font-ivy mb-3">
           See what global leading brands are saying about us
@@ -52,11 +52,13 @@ export default function Branding() {
         <p className="text-white font-termina text-[13px] md:white-sm max-w-2xl mx-auto mb-14">With thousands of retail partnerships—niche boutiques, spas, lifestyle destinations, and big-box retailers—our team is ready to build and optimize your business Globally.
         </p>
         <Swiper
-          modules={[Pagination, Autoplay]}
+          modules={[Pagination]}
           pagination={{ clickable: true }}
-          autoplay={{ delay: 4000, disableOnInteraction: false }}
+          // autoplay={{ delay: 4000, disableOnInteraction: false }}
+          initialSlide={2} 
+          centeredSlides={true}
           spaceBetween={24}
-          slidesPerView={1}
+          slidesPerView={'auto'}
           breakpoints={{
             640: { slidesPerView: 1.5 },
             1024: { slidesPerView: 3 },
@@ -68,7 +70,7 @@ export default function Branding() {
             <SwiperSlide key={i}>
               <div className="bg-white shadow-sm rounded-md p-6 h-full flex flex-col text-left">
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-[80px] h-[80px] rounded-full overflow-hidden">
+                  <div className="w-[80px] h-[80px] rounded-10 overflow-hidden">
                     <Image
                       src={item.image}
                       alt={item.name}

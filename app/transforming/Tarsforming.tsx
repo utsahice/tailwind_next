@@ -32,8 +32,8 @@ export default function TransformingBrands() {
 
       <div className="max-w-9xl bg-gray mx-auto px-6 flex flex-col lg:flex-row gap-12">
         
-        <div className="w-full lg:w-1/4 flex justify-center lg:justify-start">
-          <div className="overflow-hidden absolute top-[3150px] left-[2%] rounded-lg shadow-lg max-w-[280px] h-[650]">
+        <div className="relative w-100p max-w-sm lg:max-w-md h-[650]">
+          <div className=" relative lg:absolute lg:-top-40 overflow-hidden absolute  rounded-lg shadow-lg max-w-[280px] h-[650]">
             <Image
               src="/transforming/1.jpg"
               alt="Sephora building"

@@ -7,6 +7,9 @@ import GlazedGlossPage from "./Glazed/GlazedGloss";
 import TransformingBrands from "./transforming/Tarsforming";
 import BeautyExperts from "./Expert/BeutyExpert";
 import Branding from "./Branding/Branding";
+import GlosAction from "./Glazed/Action";
+import VideoSlider from "./Glazed/ActionVideo";
+import Footer from "./Footer/Footer";
 export default function Home() {
   return (
     <>
@@ -18,6 +21,9 @@ export default function Home() {
       <TransformingBrands/>
       <BeautyExperts/>
       <Branding/>
+      <GlosAction />
+      <VideoSlider />
+      <Footer />
     </>
   );
 }

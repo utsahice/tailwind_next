@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <main className="w-full">
-      <section className="relative w-full h-[560px] md:h-[600px] overflow-hidden">
+      <section className="relative w-full h-[560px] md:h-[100vh] overflow-hidden">
         {/* Background Video or GIF */}
         <div className="absolute inset-0 w-full h-full overflow-hidden">
           <img
@@ -86,8 +86,6 @@ export default function Hero() {
           </div>
         </div>
       </section>
-
-      <div className="h-8 bg-white"></div>
     </main>
   );
 }
