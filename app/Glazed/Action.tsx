@@ -31,7 +31,7 @@ export default function GlosAction() {
 
           {/* Button positioned 50px below the GIF */}
           <div className="pointer-events-auto mt-[50px]">
-            <button className="px-9 py-2 bg-yello rounded-10 text-black font-termina font-semibold shadow hover:opacity-95">
+            <button className="px-9 py-2 btn-primary font-termina uppercase shadow hover:opacity-95">
               Your Brand: Elevated
             </button>
           </div>

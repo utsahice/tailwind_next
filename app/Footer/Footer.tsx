@@ -5,13 +5,10 @@ import { FaInstagram, FaFacebookF, FaTiktok, FaTwitter, FaYoutube, FaLinkedinIn 
 const Footer = () => {
   return (
 <div className="max-w-7xl mx-auto px-4">
-  {/* ------------------ Section 1: Social Media Movement ------------------ */}
   <div className="text-center py-12 flex flex-col items-center">
-    <h1 className="text-4xl font-semibold mb-6">
+    <h1 className="text-4xl font-ivy text-black font-semibold mb-6">
       JOIN OUR MOVEMENT ON SOCIAL
     </h1>
-
-    {/* ✅ FULLY CENTERED GRID CONTAINER */}
     <div className="flex justify-center items-center w-full">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 justify-items-center place-items-center mx-auto" style={{ width: "fit-content" }}>
         
@@ -78,12 +75,12 @@ const Footer = () => {
   </div>
 
       {/* ------------------ Section 2: Newsletter + Explore (from image) ------------------ */}
-      <div className="bg-[#f8f6f2] py-12 px-6 md:px-16 lg:px-24 text-[#4a3f35]">
+      <div className="py-12 px-6 md:px-16 lg:px-24">
         <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-10">
           {/* LEFT: Newsletter */}
           <div>
-            <h3 className="font-semibold text-sm tracking-wider mb-3">JOIN OUR NEWSLETTER</h3>
-            <p className="text-sm text-gray-600 mb-4">
+            <h3 className="font-semibold text-[20px] text-sm font-ivy tracking-wider mb-3">JOIN OUR NEWSLETTER</h3>
+            <p className="text-black text-[14px] font-termina mb-4">
               Download your Free Beauty Content Calendar when you sign up
             </p>
 
@@ -101,7 +98,7 @@ const Footer = () => {
                 />
                 <button
                   type="submit"
-                  className="bg-[#d8ff33] text-black text-sm font-semibold px-4 py-2 rounded-md ml-3 hover:bg-lime-400 transition"
+                  className="btn-primary font-termina px-4 py-2 rounded-md ml-3 "
                 >
                   SUBSCRIBE
                 </button>
@@ -114,22 +111,21 @@ const Footer = () => {
             <img
               src="/logo.png" // replace with your logo path
               alt="Glazed Gloss Logo"
-              className="w-24 mb-2"
+              className="w-140 mb-2"
             />
-            <p className="text-xs uppercase tracking-widest">Glazed Gloss Creative Collective</p>
           </div>
 
           {/* RIGHT: Explore Links */}
           <div className="grid grid-cols-2 text-sm gap-y-2">
             <div className="space-y-2">
-              <h4 className="font-semibold text-[13px] mb-2">EXPLORE GLAZED GLOSS</h4>
+              <h4 className="font-ivy text-[20px] mb-2">EXPLORE GLAZED GLOSS</h4>
               <p>About</p>
               <p>Contact</p>
               <p>Podcast</p>
               <p>Social Media Creatives</p>
             </div>
 
-            <div className="space-y-2 mt-6 md:mt-0">
+            <div className="space-y-2 mt-8 md:mt-14">
               <p>Corporate Careers</p>
               <p>Privacy Policy</p>
               <p>Download Content Calendar</p>
