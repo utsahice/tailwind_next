@@ -1,6 +1,7 @@
 import Image from "next/image";
 import {
   FaFacebookF,
+  FaHeart,
   FaInstagram,
   FaLinkedinIn,
   FaTiktok,
@@ -11,14 +12,14 @@ import {
 export default function ExploreGlazedGloss() {
   return (
     <section className="w-full py-20 bg-white">
-      {/* TITLE */}
       <div className="text-center mb-16">
         <h1 className="text-4xl font-ivy text-black font-semibold mb-6">
           JOIN OUR MOVEMENT ON SOCIAL
         </h1>
       </div>
-     <div className="w-full px-12">
-  <div className="
+      <div className="w-full px-12">
+        <div
+          className="
     grid 
     grid-cols-1 
     sm:grid-cols-2 
@@ -27,69 +28,63 @@ export default function ExploreGlazedGloss() {
     gap-4 
     mx-auto
   ">
+          <div>
+            <Image
+              src="/Footer/1.png"
+              alt="Image 1"
+              width={500}
+              height={700}
+              className="w-full h-full object-cover rounded-lg"
+            />
+          </div>
 
-    {/* Image 1 (Tall) */}
-    <div>
-      <Image
-        src="/Footer/1.png"
-        alt="Image 1"
-        width={500}
-        height={700}
-        className="w-full h-full object-cover rounded-lg"
-      />
-    </div>
+          <div className="flex flex-col gap-4">
+            <Image
+              src="/Footer/4.png"
+              alt="Image 2"
+              width={500}
+              height={350}
+              className="w-full h-full object-cover rounded-lg"
+            />
+            <Image
+              src="/Footer/5.png"
+              alt="Image 3"
+              width={500}
+              height={350}
+              className="w-full h-full object-cover rounded-lg"
+            />
+          </div>
 
-    {/* Image 2 + 3 (Stacked) */}
-    <div className="flex flex-col gap-4">
-      <Image
-        src="/Footer/4.png"
-        alt="Image 2"
-        width={500}
-        height={350}
-        className="w-full h-72 sm:h-72 md:h-72 object-cover rounded-lg"
-      />
-      <Image
-        src="/Footer/5.png"
-        alt="Image 3"
-        width={500}
-        height={350}
-        className="w-full h-72 sm:h-72 md:h-72 object-cover rounded-lg"
-      />
-    </div>
+          <div>
+            <Image
+              src="/Footer/3.png"
+              alt="Image 4"
+              width={500}
+              height={700}
+              className="w-full h-full object-cover rounded-lg"
+            />
+          </div>
 
-    {/* Image 4 (Tall) */}
-    <div>
-      <Image
-        src="/Footer/3.png"
-        alt="Image 4"
-        width={500}
-        height={700}
-        className="w-full h-full object-cover rounded-lg"
-      />
-    </div>
+          <div className="flex flex-col gap-4">
+            <Image
+              src="/Footer/2.png"
+              alt="Image 6"
+              width={500}
+              height={350}
+              className="w-full h-full object-cover rounded-lg"
+            />
+            <Image
+              src="/Footer/6.png"
+              alt="Image 7"
+              width={500}
+              height={350}
+              className="w-full h-full object-cover rounded-lg"
+            />
+          </div>
+        </div>
+      </div>
 
-    {/* Image 6 + 7 (Stacked) */}
-    <div className="flex flex-col gap-4">
-      <Image
-        src="/Footer/2.png"
-        alt="Image 6"
-        width={500}
-        height={350}
-        className="w-full h-72 sm:h-72 md:h-72 object-cover rounded-lg"
-      />
-      <Image
-        src="/Footer/6.png"
-        alt="Image 7"
-        width={500}
-        height={350}
-        className="w-full h-72 sm:h-72 md:h-72 object-cover rounded-lg"
-      />
-    </div>
-
-  </div>
-</div>
-
-<div className="py-12 px-6 md:px-16 lg:px-24">
+      <div className="py-12 px-6 md:px-16 lg:px-24">
         <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-10">
           <div>
             <h3 className="font-semibold text-[20px] text-sm font-ivy tracking-wider mb-3">
@@ -145,22 +140,32 @@ export default function ExploreGlazedGloss() {
             </div>
           </div>
         </div>
-        </div>
-      {/* FOOTER ROW */}
+      </div>
       <div className="w-full mt-20 px-10 flex justify-between items-center">
-        {/* LEFT COPYRIGHT */}
-        <p className=" text-black">
-          © 2024 Glazed Gloss. All Rights Reserved.
+        <p className="flex items-center gap-2 text-black uppercase font-termina text-[10px]">
+          <FaHeart className="inline-block w-3.5 h-3.5 md-3" />
+          <span>//Techysouts</span>
+          2024 Glazed Gloss. All Rights Reserved.
         </p>
 
-        {/* RIGHT ICONS */}
-        <div className="flex items-center gap-6">
-          <FaInstagram className="hover:text-black transition" size={18} />
-          <FaFacebookF className="hover:text-black transition" size={18} />
-          <FaTiktok className="hover:text-black transition" size={18} />
-          <FaTwitter className="hover:text-black transition" size={18} />
-          <FaYoutube className="hover:text-black transition" size={18} />
-          <FaLinkedinIn className="hover:text-black transition" size={18} />
+        <div className="flex items-center gap-3">
+          {[
+            FaInstagram,
+            FaFacebookF,
+            FaTiktok,
+            FaTwitter,
+            FaYoutube,
+            FaLinkedinIn,
+          ].map((Icon, i) => (
+            <div
+              key={i}
+              className="w-10 h-10 rounded-full bg-sm flex items-center justify-center">
+              <Icon
+                className="text-white hover:text-black transition"
+                size={18}
+              />
+            </div>
+          ))}
         </div>
       </div>
     </section>

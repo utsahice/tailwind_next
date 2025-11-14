@@ -7,17 +7,22 @@ export default function TransformingBrands() {
         TRUSTED BY GLOBAL BRAND EXPERTS
       </h2>
 
-      
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 text-center gap-12 border-b border-gray-300 pb-12 mb-20">
-
         {[
           { title: "EXPERIENCE", value: "25", desc: "YEARS IN GGC INDUSTRY" },
           { title: "PERFORMANCE", value: "200%", desc: "INCREASE IN SALES" },
-          { title: "EFFICIENT", value: "5X", desc: "FASTER PRODUCTION & ASSET DELIVERY" },
-          { title: "FASTER", value: "3X", desc: "OPTIMIZED RETAIL STRATEGY & GLOBAL DISTRIBUTION" },
+          {
+            title: "EFFICIENT",
+            value: "5X",
+            desc: "FASTER PRODUCTION & ASSET DELIVERY",
+          },
+          {
+            title: "FASTER",
+            value: "3X",
+            desc: "OPTIMIZED RETAIL STRATEGY & GLOBAL DISTRIBUTION",
+          },
         ].map((item, i) => (
           <div key={i} className="relative flex flex-col items-center px-4">
-
             {/* Vertical divider */}
             {i !== 0 && (
               <div className="hidden lg:block absolute left-0 top-1/2 -translate-y-1/2 h-25 w-px bg-black"></div>
@@ -38,11 +43,9 @@ export default function TransformingBrands() {
         ))}
       </div>
 
-
       <div className="max-w-9xl bg-gray mx-auto px-6 flex flex-col lg:flex-row gap-12">
-        
-        <div className="relative w-100p max-w-sm lg:max-w-md sm:max-w-sm h-[650]">
-          <div className=" relative lg:absolute lg:-top-70 sm:-top-70 overflow-hidden absolute  rounded-lg shadow-lg max-w-[280px] h-[650]">
+        <div className="w-full lg:w-auto flex-shrink-0">
+          <div className="mx-auto lg:mx-0 h-[650] max-w-[280px] rounded-lg overflow-hidden shadow-lg transform lg:-translate-y-10">
             <Image
               src="/transforming/1.jpg"
               alt="Sephora building"
@@ -53,7 +56,7 @@ export default function TransformingBrands() {
           </div>
         </div>
 
-        <div className="w-full lg:w-3/4 overflow-x-auto">
+        <div className="w-full lg:w-3/4 overflow-x-auto ml-0.5">
           <p className="text-xs pt-9.5 uppercase font-termina tracking-widest text-white mb-2">
             What We Do
           </p>

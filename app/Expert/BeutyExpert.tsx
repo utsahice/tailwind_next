@@ -10,7 +10,7 @@ export default function BeautyExperts() {
         <h2 className="text-3xl md:text-5xl font-ivy text-black mt-2">
           Hub for Beauty Experts
         </h2>
-        <div className="flex justify-center md:justify-end pr:50px gap-8 mt-4 text-sm">
+        <div className="flex justify-center md:justify-end gap-8 text-sm">
           <span className="font-termina tracking-wide">STOCK</span>
           <span className="font-termina tracking-wide">
             SOCIAL MEDIA TEMPLATES
