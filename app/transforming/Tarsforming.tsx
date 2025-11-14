@@ -23,7 +23,6 @@ export default function TransformingBrands() {
           },
         ].map((item, i) => (
           <div key={i} className="relative flex flex-col items-center px-4">
-            {/* Vertical divider */}
             {i !== 0 && (
               <div className="hidden lg:block absolute left-0 top-1/2 -translate-y-1/2 h-25 w-px bg-black"></div>
             )}
@@ -138,29 +137,14 @@ export default function TransformingBrands() {
               <ul className="space-y-1 text-white font-termina uppercase">
                 <li>Go-to-Market</li>
                 <li>Asset Consultation</li>
-                <li>Line Planning</li>
-                <li>Pitch Decks</li>
-                <li>Account Mgmt</li>
-                <li>Wholesale Strategy</li>
-                <li>Wholesale Strategy</li>
-                <li>Wholesale Strategy</li>
-                <li>Wholesale Strategy</li>
-                <li>Wholesale Strategy</li>
-                <li>Wholesale Strategy</li>
-                <li>Wholesale Strategy</li>
-                <li>Wholesale Strategy</li>
-                <li>Wholesale Strategy</li>
-                <li>Wholesale Strategy</li>
-                <li>Wholesale Strategy</li>
-                <li>Wholesale Strategy</li>
-                <li>Wholesale Strategy</li>
-                <li>Wholesale Strategy</li>
-                <li>Wholesale Strategy</li>
-                <li>Wholesale Strategy</li>
-                <li>Wholesale Strategy</li>
-                <li>Wholesale Strategy</li>
-                <li>Wholesale Strategy</li>
-                <li>Wholesale Strategy</li>
+                <li>Line Planning For Buyers Brand Sales Pitch Deck</li>
+                <li>Buyer Meeting Facilitation</li>
+                <li>Retail Deployment Strategy</li>
+                <li>Expert Account Management</li>
+                <li>Maximize Retail Opportunities</li>
+                <li>Strategic Account Outreach</li>
+                <li>Order Processing</li>
+                <li>Invoicing + Accounts Receivable</li>
                 <li>Wholesale Strategy</li>
               </ul>
             </div>

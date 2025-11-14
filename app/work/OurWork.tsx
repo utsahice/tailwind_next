@@ -55,8 +55,7 @@ export default function OurWork() {
             pagination={{ clickable: true }}
             spaceBetween={20}
             slidesPerView={1.1}
-            className="pb-10"
-          >
+            className="pb-10">
             {works.map((work) => (
               <SwiperSlide key={work.title}>
                 <WorkCard work={work} />
@@ -66,10 +65,10 @@ export default function OurWork() {
         </div>
       </div>
       <style jsx global>{`
-      .swiper-pagination {
-        position : flex !important;
-        padding-top : 10px !important;
-      }
+        .swiper-pagination {
+          position: flex !important;
+          padding-top: 10px !important;
+        }
         .swiper-pagination-bullet {
           background: #000 !important;
           opacity: 0.3;
@@ -83,7 +82,7 @@ export default function OurWork() {
   );
 }
 
-function WorkCard({ work }: any) {
+function WorkCard({ work }) {
   return (
     <div className="flex flex-col  bg-transparent overflow-hidden transition-all duration-300 rounded-xl">
       {/* Image */}

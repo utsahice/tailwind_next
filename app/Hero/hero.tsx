@@ -31,7 +31,7 @@ export default function Hero() {
             </button>
           </div>
         </div>
-        <div className="absolute top-8 left-1/2 transform -translate-x-1/2 text-white/80  tracking-wider font-termina">
+        <div className="absolute top-8 left-1/2 text-[10px] transform -translate-x-1/2 text-white/80  tracking-wider font-termina">
           This is the first example of a sitewide notice
         </div>
         <div className="absolute bottom-0 left-0 right-0">
@@ -53,17 +53,15 @@ export default function Hero() {
                   height={48}
                   className="object-contain"
                 />
-                <span className="text-[10px] text-slate-500 mt-1 uppercase tracking-widest">
-                  Glazed Gloss
-                </span>
+                
               </div>
-              <div className="flex items-center justify-end gap-5">
-                <div className="hidden sm:flex items-center gap-3 text-slate-800 text-sm">
-                  <img src="/phone.png" alt="Phone" width={24} height={24} />
-                  <p className="font-termina">858.353.3220</p>
+              <div className="flex items-center justify-end gap-7">
+                <div className="hidden sm:flex items-center gap-3  text-sm">
+                  <img src="/phone.png" alt="Phone" width={15} height={15} />
+                  <p className="font-termina text-[14px] ">858.353.3220</p>
                 </div>
 
-                <button className="hidden sm:block px-14 py-2 btn-primary font-termina">
+                <button className="hidden sm:block px-10 py-2 btn-primary  font-termina">
                   HIRE GG
                 </button>
                 <button className="sm:hidden">

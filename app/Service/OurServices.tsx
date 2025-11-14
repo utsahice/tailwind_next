@@ -24,7 +24,7 @@ export default function OurServices() {
         </div>
         {/* RIGHT SIDE IMAGES (EXACT SAME DESIGN AS REFERENCE) */}
 <div className="relative w-full">
-  <div className="grid grid-cols-2 gap-5 relative w-[85%]">
+  <div className="grid grid-cols-2 gap-5 relative w-[85%] ">
 
     {/* 1 — TOP-LEFT LARGE */}
     <div>
@@ -33,33 +33,33 @@ export default function OurServices() {
         alt="service 1"
         width={500}
         height={400}
-        className="w-full h-[240px] object-cover rounded-2xl"
+        className="w-full h-[240px] object-cover rounded-10"
       />
     </div>
 
     {/* 2 — TOP-RIGHT GROUP PHOTO */}
-    <div className="relative top-4 w-[120%]">
+    <div className="relative top-8 w-[145%]">
       <Image
         src="/service_4.jpg"
         alt="service 2"
         width={500}
         height={400}
-        className="w-full h-[180px] object-cover rounded-2xl"
+        className="w-full h-[180px] object-cover rounded-10"
       />
     </div>
 
     {/* 3 — BOTTOM-LEFT FRUITS PHOTO + WHITE CARD */}
-    <div className="relative left-17 -top-2 w-[85%]">
+    <div className="relative left-[93px] pt-20px w-[85%]">
       <Image
         src="/service_6.jpg"
         alt="service 3"
         width={500}
         height={400}
-        className="w-full h-[200px] object-cover rounded-2xl"
+        className="w-full h-[200px] object-cover rounded-10"
       />
 
       {/* White floating card */}
-      <div className="absolute -top-7 -left-15 bg-white rounded-xl shadow-lg p-3 flex items-center gap-3">
+      <div className="absolute -top-7 -left-21 bg-white rounded-xl shadow-lg p-3 flex items-center gap-3">
         <Image
           src="/service_5.jpg"
           alt="avatar"
@@ -75,13 +75,13 @@ export default function OurServices() {
     </div>
 
     {/* 4 — BOTTOM-RIGHT HAND + PHONE (SHIFTED UP & RIGHT EXACTLY LIKE DESIGN) */}
-    <div className="relative -top-[48px] left-[41px] w-[85%]">
+    <div className="relative -top-[18px] left-[80px] w-[85%]">
       <Image
         src="/service_2.jpg"
         alt="service 4"
         width={500}
         height={400}
-        className="w-full h-[200px] object-cover rounded-2xl"
+        className="w-full h-[200px] object-cover rounded-10"
       />
     </div>
 

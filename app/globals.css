@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
- 
+ --spacing-5: 5px;
   --spacing-18: 18px;
   --spacing-20: 20px;
   --spacing-22: 22px;

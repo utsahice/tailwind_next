@@ -122,9 +122,9 @@ export default function ExploreGlazedGloss() {
             />
           </div>
 
-          <div className="grid grid-cols-2 font-termina uppercase text-[12px] text-black gap-y-2">
+          <div className="grid grid-cols-2 font-termina uppercase text-[8px]  text-black gap-y-2">
             <div className="space-y-2 mr-9">
-              <h4 className="font-ivy text-sm text-2XL mb-2">
+              <h4 className="font-ivy  text-[12px]  text-2XL mb-2">
                 EXPLORE GLAZED GLOSS
               </h4>
               <p>About</p>
