@@ -1,79 +1,95 @@
-import React from "react";
 import Image from "next/image";
 import {
-  FaInstagram,
   FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
   FaTiktok,
   FaTwitter,
   FaYoutube,
-  FaLinkedinIn,
 } from "react-icons/fa";
 
-const Footer = () => {
+export default function ExploreGlazedGloss() {
   return (
-    <div className="max-w-7xl mx-auto px-4">
-      <div className="text-center py-12 flex flex-col items-center">
+    <section className="w-full py-20 bg-white">
+      {/* TITLE */}
+      <div className="text-center mb-16">
         <h1 className="text-4xl font-ivy text-black font-semibold mb-6">
           JOIN OUR MOVEMENT ON SOCIAL
         </h1>
-        <div className="flex justify-center items-center w-full">
-          <div
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 justify-items-center place-items-center mx-auto"
-            style={{ width: "fit-content" }}>
-            <div>
-              <Image
-                src="/Footer/1.png"
-                alt="Image 1"
-                width={200}
-                height={300}
-                className="object-cover rounded-lg"
-              />
-            </div>
-            <div className="flex flex-col gap-4">
-              <Image
-                src="/Footer/4.png"
-                alt="Image 2"
-                width={200}
-                height={150}
-                className="object-cover rounded-lg"
-              />
-              <Image
-                src="/Footer/5.png"
-                alt="Image 3"
-                width={200}
-                height={150}
-                className="object-cover rounded-lg"
-              />
-            </div>
-            <div>
-              <Image
-                src="/Footer/3.png"
-                alt="Image 4"
-                width={200}
-                height={300}
-                className="object-cover rounded-lg"
-              />
-            </div>
-            <div className="flex flex-col gap-4">
-              <Image
-                src="/Footer/2.png"
-                alt="Image 6"
-                width={200}
-                height={150}
-                className="object-cover rounded-lg"
-              />
-              <Image
-                src="/Footer/6.png"
-                alt="Image 7"
-                width={200}
-                height={150}
-                className="object-cover rounded-lg"
-              />
-            </div>
-          </div>
-        </div>
       </div>
-      <div className="py-12 px-6 md:px-16 lg:px-24">
+     <div className="w-full px-12">
+  <div className="
+    grid 
+    grid-cols-1 
+    sm:grid-cols-2 
+    md:grid-cols-3 
+    lg:grid-cols-4 
+    gap-4 
+    mx-auto
+  ">
+
+    {/* Image 1 (Tall) */}
+    <div>
+      <Image
+        src="/Footer/1.png"
+        alt="Image 1"
+        width={500}
+        height={700}
+        className="w-full h-full object-cover rounded-lg"
+      />
+    </div>
+
+    {/* Image 2 + 3 (Stacked) */}
+    <div className="flex flex-col gap-4">
+      <Image
+        src="/Footer/4.png"
+        alt="Image 2"
+        width={500}
+        height={350}
+        className="w-full h-72 sm:h-72 md:h-72 object-cover rounded-lg"
+      />
+      <Image
+        src="/Footer/5.png"
+        alt="Image 3"
+        width={500}
+        height={350}
+        className="w-full h-72 sm:h-72 md:h-72 object-cover rounded-lg"
+      />
+    </div>
+
+    {/* Image 4 (Tall) */}
+    <div>
+      <Image
+        src="/Footer/3.png"
+        alt="Image 4"
+        width={500}
+        height={700}
+        className="w-full h-full object-cover rounded-lg"
+      />
+    </div>
+
+    {/* Image 6 + 7 (Stacked) */}
+    <div className="flex flex-col gap-4">
+      <Image
+        src="/Footer/2.png"
+        alt="Image 6"
+        width={500}
+        height={350}
+        className="w-full h-72 sm:h-72 md:h-72 object-cover rounded-lg"
+      />
+      <Image
+        src="/Footer/6.png"
+        alt="Image 7"
+        width={500}
+        height={350}
+        className="w-full h-72 sm:h-72 md:h-72 object-cover rounded-lg"
+      />
+    </div>
+
+  </div>
+</div>
+
+<div className="py-12 px-6 md:px-16 lg:px-24">
         <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-10">
           <div>
             <h3 className="font-semibold text-[20px] text-sm font-ivy tracking-wider mb-3">
@@ -111,9 +127,9 @@ const Footer = () => {
             />
           </div>
 
-          <div className="grid grid-cols-2 text-sm gap-y-2">
-            <div className="space-y-2">
-              <h4 className="font-ivy text-[20px] mb-2">
+          <div className="grid grid-cols-2 font-termina uppercase text-[12px] text-black gap-y-2">
+            <div className="space-y-2 mr-9">
+              <h4 className="font-ivy text-sm text-2XL mb-2">
                 EXPLORE GLAZED GLOSS
               </h4>
               <p>About</p>
@@ -122,37 +138,31 @@ const Footer = () => {
               <p>Social Media Creatives</p>
             </div>
 
-            <div className="space-y-2 mt-8 md:mt-14">
+            <div className="space-y-2 mt-4 md:mt-8">
               <p>Corporate Careers</p>
               <p>Privacy Policy</p>
               <p>Download Content Calendar</p>
             </div>
           </div>
         </div>
+        </div>
+      {/* FOOTER ROW */}
+      <div className="w-full mt-20 px-10 flex justify-between items-center">
+        {/* LEFT COPYRIGHT */}
+        <p className=" text-black">
+          © 2024 Glazed Gloss. All Rights Reserved.
+        </p>
 
-        <div className="border-t border-gray-300 mt-12 pt-6 text-center">
-          <div className="flex justify-center gap-5 mb-4 text-[#5c473a]">
-            <FaInstagram className="hover:text-black transition" size={18} />
-            <FaFacebookF className="hover:text-black transition" size={18} />
-            <FaTiktok className="hover:text-black transition" size={18} />
-            <FaTwitter className="hover:text-black transition" size={18} />
-            <FaYoutube className="hover:text-black transition" size={18} />
-            <FaLinkedinIn className="hover:text-black transition" size={18} />
-          </div>
-
-          <p className="text-xs text-gray-600">
-            <span className="mr-2">♡ // TECHYSCOUTS</span> © 2024 Glazed Gloss
-            Creative
-          </p>
+        {/* RIGHT ICONS */}
+        <div className="flex items-center gap-6">
+          <FaInstagram className="hover:text-black transition" size={18} />
+          <FaFacebookF className="hover:text-black transition" size={18} />
+          <FaTiktok className="hover:text-black transition" size={18} />
+          <FaTwitter className="hover:text-black transition" size={18} />
+          <FaYoutube className="hover:text-black transition" size={18} />
+          <FaLinkedinIn className="hover:text-black transition" size={18} />
         </div>
       </div>
-      <footer className="py-12 text-center bg-white">
-        <p className="text-gray-500 text-sm">
-          © 2024 Glazed Gloss Creative Collective
-        </p>
-      </footer>
-    </div>
+    </section>
   );
-};
-
-export default Footer;
+}

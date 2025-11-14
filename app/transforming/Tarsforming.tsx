@@ -2,38 +2,47 @@ import Image from "next/image";
 
 export default function TransformingBrands() {
   return (
-    <section className=" py-16 lg:py-24">
-      <div className="max-w-7xl mx-auto px-6 text-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 border-b border-gray-300 pb-10 mb-16">
+    <section className="py-16 lg:py-24 bg-white">
+      <h2 className="text-center text-black font-ivy text-3xl md:text-4xl lg:text-5xl mb-10 tracking-wide">
+        TRUSTED BY GLOBAL BRAND EXPERTS
+      </h2>
+
+      
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 text-center gap-12 border-b border-gray-300 pb-12 mb-20">
+
         {[
-          { title: "Experience", value: "25", desc: "Years in GGC Industry" },
-          { title: "Performance", value: "200%", desc: "Increase in Sales" },
-          {
-            title: "Efficient",
-            value: "5X",
-            desc: "Faster Production & Asset Delivery",
-          },
-          {
-            title: "Faster",
-            value: "3X",
-            desc: "Optimized Retail Strategy & Global Distribution",
-          },
+          { title: "EXPERIENCE", value: "25", desc: "YEARS IN GGC INDUSTRY" },
+          { title: "PERFORMANCE", value: "200%", desc: "INCREASE IN SALES" },
+          { title: "EFFICIENT", value: "5X", desc: "FASTER PRODUCTION & ASSET DELIVERY" },
+          { title: "FASTER", value: "3X", desc: "OPTIMIZED RETAIL STRATEGY & GLOBAL DISTRIBUTION" },
         ].map((item, i) => (
-          <div key={i}>
-            <p className="text-black uppercase font-termina tracking-widest ">
+          <div key={i} className="relative flex flex-col items-center px-4">
+
+            {/* Vertical divider */}
+            {i !== 0 && (
+              <div className="hidden lg:block absolute left-0 top-1/2 -translate-y-1/2 h-25 w-px bg-black"></div>
+            )}
+
+            <p className="uppercase text-[10px] tracking-widest text-black font-termina mb-2">
               {item.title}
             </p>
-            <p className="text-4xl font-ivy text-sm">{item.value}</p>
-            <p className="text-black font-termina uppercase tracking-widest ">
+
+            <p className="text-4xl md:text-5xl font-ivy text-sm mb-2">
+              {item.value}
+            </p>
+
+            <p className="uppercase text-[10px] tracking-widest text-black font-termina max-w-[150px] leading-tight">
               {item.desc}
             </p>
           </div>
         ))}
       </div>
 
+
       <div className="max-w-9xl bg-gray mx-auto px-6 flex flex-col lg:flex-row gap-12">
         
-        <div className="relative w-100p max-w-sm lg:max-w-md h-[650]">
-          <div className=" relative lg:absolute lg:-top-40 overflow-hidden absolute  rounded-lg shadow-lg max-w-[280px] h-[650]">
+        <div className="relative w-100p max-w-sm lg:max-w-md sm:max-w-sm h-[650]">
+          <div className=" relative lg:absolute lg:-top-70 sm:-top-70 overflow-hidden absolute  rounded-lg shadow-lg max-w-[280px] h-[650]">
             <Image
               src="/transforming/1.jpg"
               alt="Sephora building"

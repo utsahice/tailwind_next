@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function OurServices() {
   return (
     <section className="w-full py-10 px-10 bg-lime flex justify-center">
-      <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-16">
+      <div className="max-w-7xl w-full grid items-center justify-center grid-cols-1 md:grid-cols-2 gap-16">
         <div className="flex flex-col gap-6">
           <p className="text-[var(--text-14)] tracking-wide text-text font-termina">
             HOW WE HELP
@@ -22,58 +22,70 @@ export default function OurServices() {
             <button className="btn-outline font-termina">VIEW ALL SERVICES</button>
           </div>
         </div>
-        <div className="relative w-full">
-          <div className="grid grid-cols-2 gap-5">
-            <div>
-              <Image
-                src="/service_1.jpg"
-                alt="service 1"
-                width={500}
-                height={400}
-                className="w-full h-[250px] object-cover rounded-2xl"
-              />
-            </div>
-            <div className="relative -top-1 w-110p">
-              <Image
-                src="/service_4.jpg"
-                alt="service 2"
-                width={500}
-                height={400}
-                className="w-full h-[150px] object-cover rounded-2xl"
-              />
-            </div>
-            <div className="relative left-25 w-90p">
-              <Image
-                src="/service_6.jpg"
-                alt="service 3"
-                width={500}
-                height={400}
-                className="w-full h-[180px] object-cover rounded-2xl"
-              />
-              <div className="absolute -top-8 -left-8 bg-white rounded-xl shadow-lg p-3 flex items-center gap-3">
-                <Image
-                  src="/service_5.jpg"
-                  alt="avatar"
-                  width={50}
-                  height={50}
-                  className="rounded-md"
-                />
-                <div className="text-[10px] leading-tight">
-                  <p className="text-text font-ivy">LOREM IPSUM</p>
-                  <p className="text-text font-termina">Lorem Ipsum</p>
-                </div>
-              </div>
-            </div>
-            <div className="relative w-90p -top-100 -right-2">
-              <Image
-                src="/service_2.jpg"
-                alt="service 4"
-                width={500}
-                height={400}
-                className="w-full h-[180px] object-cover rounded-2xl"
-              />
-            </div>
-          </div>
+        {/* RIGHT SIDE IMAGES (EXACT SAME DESIGN AS REFERENCE) */}
+<div className="relative w-full">
+  <div className="grid grid-cols-2 gap-5 relative w-[85%]">
+
+    {/* 1 — TOP-LEFT LARGE */}
+    <div>
+      <Image
+        src="/service_1.jpg"
+        alt="service 1"
+        width={500}
+        height={400}
+        className="w-full h-[240px] object-cover rounded-2xl"
+      />
+    </div>
+
+    {/* 2 — TOP-RIGHT GROUP PHOTO */}
+    <div className="relative top-4 w-[120%]">
+      <Image
+        src="/service_4.jpg"
+        alt="service 2"
+        width={500}
+        height={400}
+        className="w-full h-[180px] object-cover rounded-2xl"
+      />
+    </div>
+
+    {/* 3 — BOTTOM-LEFT FRUITS PHOTO + WHITE CARD */}
+    <div className="relative left-17 -top-2 w-[85%]">
+      <Image
+        src="/service_6.jpg"
+        alt="service 3"
+        width={500}
+        height={400}
+        className="w-full h-[200px] object-cover rounded-2xl"
+      />
+
+      {/* White floating card */}
+      <div className="absolute -top-7 -left-15 bg-white rounded-xl shadow-lg p-3 flex items-center gap-3">
+        <Image
+          src="/service_5.jpg"
+          alt="avatar"
+          width={55}
+          height={55}
+          className="rounded-md"
+        />
+        <div className="text-[10px] leading-tight">
+          <p className="text-text font-ivy">LOREM IPSUM</p>
+          <p className="text-text font-termina">Lorem Ipsum</p>
+        </div>
+      </div>
+    </div>
+
+    {/* 4 — BOTTOM-RIGHT HAND + PHONE (SHIFTED UP & RIGHT EXACTLY LIKE DESIGN) */}
+    <div className="relative -top-[48px] left-[41px] w-[85%]">
+      <Image
+        src="/service_2.jpg"
+        alt="service 4"
+        width={500}
+        height={400}
+        className="w-full h-[200px] object-cover rounded-2xl"
+      />
+    </div>
+
+  </div>
           <div className="flex flex-wrap gap-4 mt-8">
             {[
               "CREATIVE & MARKETING",

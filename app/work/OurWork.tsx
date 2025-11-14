@@ -28,17 +28,17 @@ export default function OurWork() {
         </div>
 
         {/* Tabs */}
-        <div className="flex flex-wrap gap-6 border-b mb-12 text-xs sm:text-sm font-termina font-medium">
-          <button className="text-dark border-b-2 border-yello">
+        <div className="flex flex-wrap gap-6 border-b mb-12 text-L sm:text-sm font-termina font-medium">
+          <button className="text-black border-b-2 border-yello">
             FEATURED
           </button>
-          <button className="text-gray hover:text-dark">
+          <button className="text-gray hover:text-black">
             DIGITAL DESIGN & ANIMATION
           </button>
-          <button className="text-gray hover:text-dark">
+          <button className="text-gray hover:text-black">
             VIDEOGRAPHY & PHOTOGRAPHY
           </button>
-          <button className="text-gray hover:text-dark">
+          <button className="text-gray hover:text-black">
             PAST PROJECTS & BRANDS
           </button>
         </div>
@@ -101,13 +101,13 @@ function WorkCard({ work }: any) {
           <h3 className="text-black sm:text-white mb-1 font-ivy">
             {work.title}
           </h3>
-          <p className="text-yello text-xs sm:text-sm font-medium font-termina mb-3">
+          <p className="text-yello text-xs font-medium font-termina mb-3">
             {work.tag}
           </p>
         </div>
 
         <div className="mt-auto">
-          <button className="text-black sm:text-white font-termina text-xs underline decoration-yello decoration-2 text-left block">
+          <button className="text-black sm:text-white font-termina text-xs underline decoration-yello decoration-2   text-left block">
             VIEW CASE STUDY
           </button>
         </div>

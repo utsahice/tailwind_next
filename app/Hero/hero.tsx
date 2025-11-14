@@ -26,7 +26,7 @@ export default function Hero() {
             />
           </div>
           <div className="pointer-events-auto mt-[50px]">
-            <button className="px-9 py-2 bg-yello rounded-10 text-black text-sm font-semibold shadow hover:opacity-95">
+            <button className="px-9 py-2 btn-primary font-termina">
               OUR SERVICE
             </button>
           </div>
@@ -63,7 +63,7 @@ export default function Hero() {
                   <p className="font-termina">858.353.3220</p>
                 </div>
 
-                <button className="hidden sm:block px-14 py-2 bg-yello text-black text-sm font-semibold shadow hover:opacity-95">
+                <button className="hidden sm:block px-14 py-2 btn-primary font-termina">
                   HIRE GG
                 </button>
                 <button className="sm:hidden">
@@ -92,7 +92,7 @@ export default function Hero() {
                     <a href="#">Contact</a>
                   </li>
                   <li>
-                    <button className="px-8 py-2 bg-yello text-black text-sm font-semibold rounded-10 shadow hover:opacity-95">
+                    <button className="px-8 py-2 btn-primary">
                       HIRE GG
                     </button>
                   </li>
