@@ -51,10 +51,7 @@ export default function TransformingBrands() {
           <h2 className="text-2xl lg:text-3xl font-ivy font-semibold text-yello mb-8 whitespace-nowrap">
             Transforming Brands Into Global Icons
           </h2>
-
-          {/* Horizontal Scrollable Columns */}
           <div className="flex gap-1 min-w-15px text-[10px] font-termina text-gray-700">
-            {/* COLUMN 1 */}
             <div className="min-w-[180px]">
               <h3 className="font-semibold text-white mb-2 uppercase text-[12px]">
                 Brand Strategy & Messaging
@@ -71,8 +68,6 @@ export default function TransformingBrands() {
                 <li>Campaign Strategy</li>
               </ul>
             </div>
-
-            {/* COLUMN 2 */}
             <div className="min-w-[180px] ">
               <h3 className="font-semibold text-white mb-2 uppercase text-[12px]">
                 Brand Design
@@ -84,8 +79,6 @@ export default function TransformingBrands() {
                 <li>Campaign Development</li>
               </ul>
             </div>
-
-            {/* COLUMN 3 */}
             <div className="min-w-[180px]">
               <h3 className="font-semibold text-white mb-2 uppercase text-[12px]">
                 Content Concept & Creation
@@ -100,8 +93,6 @@ export default function TransformingBrands() {
                 <li>Marketing Collateral</li>
               </ul>
             </div>
-
-            {/* COLUMN 4 */}
             <div className="min-w-[180px]">
               <h3 className="font-semibold text-white mb-2 uppercase text-[12px]">
                 Architectural & Experiential
@@ -115,8 +106,6 @@ export default function TransformingBrands() {
                 <li>Wayfinding</li>
               </ul>
             </div>
-
-            {/* COLUMN 5 */}
             <div className="min-w-[180px]">
               <h3 className="font-semibold text-white mb-2 uppercase text-[12px]">
                 Industrial Design
@@ -130,8 +119,6 @@ export default function TransformingBrands() {
                 <li>Retail Display</li>
               </ul>
             </div>
-
-            {/* COLUMN 6 */}
             <div className="min-w-[180px]">
               <h3 className="font-semibold text-white mb-2 uppercase text-[12px]">
                 Global Retail Distribution
@@ -163,9 +150,6 @@ export default function TransformingBrands() {
                 <li>Wholesale Strategy</li>
                 <li>Wholesale Strategy</li>
                 <li>Wholesale Strategy</li>
-                <li>Wholesale Strategy</li>
-                <li>Wholesale Strategy</li>
-                <li>Wholesale Strategy</li> 
               </ul>
             </div>
           </div>

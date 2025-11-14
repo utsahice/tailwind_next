@@ -3,7 +3,6 @@ import Image from "next/image";
 export default function BeautyExperts() {
   return (
     <section className="w-full bg-[#FAF9F7] py-20 px-6 md:px-16 lg:px-24">
-      {/* Header */}
       <div className="text-center md:text-left mb-12">
         <p className="text-xs tracking-wider text-sm font-termina uppercase">
           The Ultimate Content Toolkit
@@ -19,9 +18,8 @@ export default function BeautyExperts() {
         </div>
       </div>
 
-      {/* Main Content */}
       <div className="flex flex-col lg:flex-row lg:items-stretch gap-10">
-        {/* Left Content */}
+       
         <div className="flex-1 space-y-6">
           {[
             {
@@ -59,7 +57,6 @@ export default function BeautyExperts() {
           </button>
         </div>
 
-        {/* Right Images */}
         <div className="flex-1 flex justify-center lg:justify-end gap-6">
           {["/expert/1.jpg", "/expert/2.jpg", "/expert/3.jpg"].map(
             (src, index) => (

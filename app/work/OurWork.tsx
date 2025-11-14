@@ -43,17 +43,12 @@ export default function OurWork() {
           </button>
         </div>
       </div>
-
-      {/* Grid + Swiper Section */}
       <div className="max-w-[1400px]  mx-auto px-6 sm:px-12">
-        {/* Desktop Grid */}
         <div className="hidden sm:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {works.map((work) => (
             <WorkCard key={work.title} work={work} />
           ))}
         </div>
-
-        {/* Mobile Swiper */}
         <div className="sm:hidden">
           <Swiper
             modules={[Pagination]}
@@ -70,8 +65,6 @@ export default function OurWork() {
           </Swiper>
         </div>
       </div>
-
-      {/* Swiper Styles */}
       <style jsx global>{`
       .swiper-pagination {
         position : flex !important;

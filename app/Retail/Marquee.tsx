@@ -1,7 +1,7 @@
 "use client"
 interface MarqueeProps {
   text: string;
-  speed?: number; // optional, default speed
+  speed?: number;
 }
 
 export default function Marquee({ text, speed = 100 }: MarqueeProps) {

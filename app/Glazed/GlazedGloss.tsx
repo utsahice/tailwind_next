@@ -4,9 +4,7 @@ import Image from "next/image";
 export default function GlazedGlossPage() {
   return (
     <section className="flex flex-col lg:flex-row items-center justify-between bg-white py-0.5 gap-12">
-      {/* LEFT SIDE */}
       <div className="relative w-full lg:w-1/2 flex justify-start">
-        {/* Background Image */}
         <Image
           src="/gloss/1.jpg"
           alt="Glazed Gloss founder"
@@ -14,10 +12,7 @@ export default function GlazedGlossPage() {
           height={650}
           className="w-full max-w-[80%] max-h-[650px] object-cover"
         />
-
-        {/* PHONE FRAME */}
         <div className="absolute top-[50px] left-[85%] transform -translate-x-1/2 w-[200px] h-[450] md:w-[150px] lg:w-[200px] aspect-[9/19] bg-black rounded-[40px] shadow-2xl overflow-hidden border-[6px] border-black">
-          {/* Video inside the phone */}
           <video
             src="/gloss/2.mp4"
             autoPlay
@@ -28,8 +23,6 @@ export default function GlazedGlossPage() {
           />
         </div>
       </div>
-
-      {/* RIGHT SIDE TEXT */}
       <div className="w-full lg:w-1/2 text-dark px-6 lg:px-0">
         <p className="font-termina text-xs tracking-widest text-gray-500 uppercase mb-2">
           Who We Are

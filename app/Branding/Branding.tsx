@@ -42,7 +42,7 @@ export default function Branding() {
   return (
     <section className="w-full bg-gray py-24 text-center">
       <div className="max-w-auto mx-auto">
-        {/* Headings */}
+      
         <p className="text-[11px] uppercase tracking-[0.15em] text-white font-ivy mb-3">
           See what global leading brands are saying about us
         </p>
@@ -54,7 +54,6 @@ export default function Branding() {
         <Swiper
           modules={[Pagination]}
           pagination={{ clickable: true }}
-          // autoplay={{ delay: 4000, disableOnInteraction: false }}
           initialSlide={2} 
           centeredSlides={true}
           spaceBetween={24}

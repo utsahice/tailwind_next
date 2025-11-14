@@ -69,7 +69,6 @@ function VideoCard({ src, text }: { src: string; text: string }) {
 
   return (
     <div className="relative rounded-10 overflow-hidden gap-40 shadow-lg group">
-      {/* Video */}
       <video
         ref={videoRef}
         src={src}
@@ -78,13 +77,9 @@ function VideoCard({ src, text }: { src: string; text: string }) {
         playsInline
         className="w-full h-full object-cover"
       />
-
-      {/* Caption */}
       <div className="absolute bottom-70 left-1/2 -translate-x-1/2 bg-white text-expert text-xs font-termina font-light-2 py-3 px-5 rounded-lg shadow-md w-[85%]">
         {text}
       </div>
-
-      {/* Controls */}
       <div className="absolute bottom-6 right-6 flex gap-3">
         <button
           onClick={togglePlay}
