@@ -1,0 +1,112 @@
+import { storyblokEditable } from "@storyblok/react/rsc";
+import Image from "next/image";
+
+interface HeroProps {
+    blok: {
+        title?: string;
+        subtitle?: string;
+        background_image?: {
+            filename: string;
+            alt: string;
+        };
+        hero_gif?: {
+            filename: string;
+            alt: string;
+        };
+        _uid: string;
+        component: string;
+    };
+}
+
+export default function Hero({ blok }: HeroProps) {
+    return (
+        <main className="w-full" {...storyblokEditable(blok)}>
+            <section className="relative w-full h-[560px] md:h-[100vh] overflow-hidden">
+                <div className="absolute inset-0 w-full h-full overflow-hidden">
+                    {blok.background_image?.filename ? (
+                        <Image
+                            src={blok.background_image.filename}
+                            alt={blok.background_image.alt || "Background"}
+                            fill
+                            className="w-full h-full object-cover object-center"
+                            priority
+                        />
+                    ) : (
+                        <img
+                            src="/hero_bg.gif"
+                            alt="Background"
+                            className="w-full h-full object-cover object-center"
+                        />
+                    )}
+                    <div className="absolute inset-0 bg-black/12"></div>
+                </div>
+                <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
+                    <div className="w-[78%] md:w-[60%] lg:w-[48%] max-w-[980px]">
+                        {blok.hero_gif?.filename ? (
+                            <Image
+                                src={blok.hero_gif.filename}
+                                alt={blok.hero_gif.alt || "Center animated"}
+                                width={980}
+                                height={600}
+                                className="w-full h-auto object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.35)]"
+                                priority
+                            />
+                        ) : (
+                            <img
+                                src="/hero.gif"
+                                alt="Center animated"
+                                className="w-full h-auto object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.35)]"
+                            />
+                        )}
+                    </div>
+                    <div className="pointer-events-auto mt-[50px]">
+                        <button className="px-9 py-2 btn-primary font-termina">
+                            OUR SERVICE
+                        </button>
+                    </div>
+                </div>
+                <div className="absolute top-8 left-1/2 text-[10px] transform -translate-x-1/2 text-white/80 tracking-wider font-termina">
+                    This is the first example of a sitewide notice
+                </div>
+                <div className="absolute bottom-0 left-0 right-0">
+                    <div className="bg-white/95 border-t border-slate-200">
+                        <div className="mx-auto px-6 md:px-12 lg:px-[100px] py-4 max-w-[1800px] grid grid-cols-3 items-center">
+                            <div className="flex items-center gap-2 justify-start">
+                                <button className="flex items-center gap-2 text-sm text-slate-800">
+                                    <Image src="/menu.png" alt="Menu" width={18} height={12} />
+                                    <span className="hidden md:inline-block">MENU</span>
+                                </button>
+                            </div>
+                            <div className="flex flex-col items-center justify-center">
+                                <Image
+                                    src="/logo.png"
+                                    alt="GG logo"
+                                    width={72}
+                                    height={48}
+                                    className="object-contain"
+                                />
+                            </div>
+                            <div className="flex items-center justify-end gap-7">
+                                <div className="hidden sm:flex items-center gap-3 text-sm">
+                                    <Image src="/phone.png" alt="Phone" width={15} height={15} />
+                                    <p className="font-termina text-[14px]">858.353.3220</p>
+                                </div>
+                                <button className="hidden sm:block px-10 py-2 btn-primary font-termina">
+                                    HIRE GG
+                                </button>
+                                <button className="sm:hidden">
+                                    <Image
+                                        src="/search.svg"
+                                        alt="Search"
+                                        width={20}
+                                        height={20}
+                                    />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    );
+}

@@ -21,26 +21,36 @@ export default function OurWork() {
       {/* Header Section */}
       <div className="max-w-[1400px]  mx-auto px-6 sm:px-12">
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-16 gap-6">
-          <h2 className="text-4xl md:text-5xl font-ivy font-bold tracking-wide">
+          <h2 className="text-4xl md:text-5xl sm:text-center text-center font-ivy font-bold tracking-wide">
             OUR WORK
           </h2>
-          <button className="btn-primary font-termina">VIEW ALL</button>
+          <button className="btn-primary font-termina self-center">VIEW ALL</button>
         </div>
 
         {/* Tabs */}
-        <div className="flex flex-wrap gap-6 border-b mb-12 text-L sm:text-sm font-termina font-medium">
-          <button className="text-black border-b-2 border-yello">
-            FEATURED
-          </button>
-          <button className="text-gray hover:text-black">
-            DIGITAL DESIGN & ANIMATION
-          </button>
-          <button className="text-gray hover:text-black">
-            VIDEOGRAPHY & PHOTOGRAPHY
-          </button>
-          <button className="text-gray hover:text-black">
-            PAST PROJECTS & BRANDS
-          </button>
+        <div className="mt-4">
+          <div className="md:hidden w-full pl-27px">
+            <select className="w-90px border-b border-gray-300 text-black font-termina py-3 mb-7 text-[10px]">
+              <option>FEATURED</option>
+              <option>DIGITAL DESIGN & ANIMATION</option>
+              <option>VIDEOGRAPHY & PHOTOGRAPHY</option>
+              <option>PAST PROJECTS & BRANDS</option>
+            </select>
+          </div>
+          <div className="hidden md:flex flex-wrap gap-6 border-b mb-12 text-L text-black font-termina font-medium">
+            <button className="text-black border-b-2 border-yello">
+              FEATURED
+            </button>
+            <button className="text-gray hover:text-black">
+              DIGITAL DESIGN & ANIMATION
+            </button>
+            <button className="text-gray hover:text-black">
+              VIDEOGRAPHY & PHOTOGRAPHY
+            </button>
+            <button className="text-gray hover:text-black">
+              PAST PROJECTS & BRANDS
+            </button>
+          </div>
         </div>
       </div>
       <div className="max-w-[1400px]  mx-auto px-6 sm:px-12">
@@ -66,7 +76,7 @@ export default function OurWork() {
       </div>
       <style jsx global>{`
         .swiper-pagination {
-          position: flex !important;
+          position: relative !important;
           padding-top: 10px !important;
         }
         .swiper-pagination-bullet {
@@ -82,7 +92,7 @@ export default function OurWork() {
   );
 }
 
-function WorkCard({ work }) {
+function WorkCard({ work }: { work: { title: string; tag: string; image: string; } }) {
   return (
     <div className="flex flex-col  bg-transparent overflow-hidden transition-all duration-300 rounded-xl">
       {/* Image */}

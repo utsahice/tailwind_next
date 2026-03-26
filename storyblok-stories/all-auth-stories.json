@@ -1,0 +1,143 @@
+{
+  "contact": {
+    "name": "contact",
+    "slug": "contact",
+    "content": {
+      "component": "page",
+      "_uid": "e006ba4a-7f8c-4e7c-983f-b8b7a4ae01d5",
+      "body": [
+        {
+          "component": "ContactForm",
+          "_uid": "000f8761-b618-4925-b152-cdaabae4e7a4",
+          "title": "Contact Us",
+          "subtitle": "Get In Touch",
+          "description": "Ready to transform your beauty brand? Let's start the conversation.",
+          "form_title": "Send us a message",
+          "contact_info": [
+            {
+              "component": "contact_info_item",
+              "_uid": "070e67fb-3fb5-49c0-be8c-500093119f61",
+              "icon_type": "location",
+              "title": "Office Location",
+              "content": "Beverly Hills, CA 90210"
+            },
+            {
+              "component": "contact_info_item",
+              "_uid": "8267bc0a-7b0d-42d4-99f9-f6b9b31e07d7",
+              "icon_type": "email",
+              "title": "Email Us",
+              "content": "hello@glazedgloss.com"
+            },
+            {
+              "component": "contact_info_item",
+              "_uid": "ec0f2294-f0af-4367-aac7-801416ee85c9",
+              "icon_type": "phone",
+              "title": "Call Us",
+              "content": "858.353.3220"
+            }
+          ],
+          "business_hours": [
+            {
+              "component": "business_hour",
+              "_uid": "21524f70-2e6c-4a21-922d-ead5bc47d833",
+              "day": "Monday - Friday",
+              "hours": "9:00 AM - 6:00 PM"
+            },
+            {
+              "component": "business_hour",
+              "_uid": "9402c3d5-ffaa-4960-81b6-6b21c56c10f2",
+              "day": "Saturday",
+              "hours": "10:00 AM - 4:00 PM"
+            },
+            {
+              "component": "business_hour",
+              "_uid": "8296beea-1a17-4f04-81ff-39622e111c19",
+              "day": "Sunday",
+              "hours": "Closed"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "login": {
+    "name": "login",
+    "slug": "login",
+    "content": {
+      "component": "page",
+      "_uid": "8aba33a3-a45d-4c3c-b1e6-5e4003803447",
+      "body": [
+        {
+          "component": "LoginForm",
+          "_uid": "9748bd15-ca71-4b94-b834-e52c51350b97",
+          "title": "Welcome Back",
+          "subtitle": "Sign in to your account",
+          "register_link_text": "Don't have an account? Register here",
+          "demo_credentials": [
+            {
+              "component": "demo_credential",
+              "_uid": "208b4408-b2af-44f2-b4af-68a99021a61e",
+              "label": "Admin Account",
+              "email": "admin@glazedgloss.com",
+              "password": "admin123"
+            },
+            {
+              "component": "demo_credential",
+              "_uid": "2a0f9c01-c9da-464f-8e33-573bcf214979",
+              "label": "Demo User",
+              "email": "user@example.com",
+              "password": "user123"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "register": {
+    "name": "register",
+    "slug": "register",
+    "content": {
+      "component": "page",
+      "_uid": "4a4b0d76-3cf2-498c-bbc3-88816ee41d3c",
+      "body": [
+        {
+          "component": "RegisterForm",
+          "_uid": "6d346f72-591b-4fe5-b9a5-c923d10b31e8",
+          "title": "Create Account",
+          "subtitle": "Join Glazed Gloss Beauty",
+          "login_link_text": "Already have an account? Sign in",
+          "benefits": [
+            {
+              "component": "benefit_item",
+              "_uid": "9442aba1-dea0-4430-ab4b-d09de43454df",
+              "icon": "🎨",
+              "title": "Exclusive Access",
+              "description": "Get early access to new products and services"
+            },
+            {
+              "component": "benefit_item",
+              "_uid": "f1e4f36a-524b-4647-a78b-c2a29599a3ac",
+              "icon": "💼",
+              "title": "Business Tools",
+              "description": "Access professional beauty brand resources"
+            },
+            {
+              "component": "benefit_item",
+              "_uid": "c0da271b-f89e-4a63-b025-47c53938de16",
+              "icon": "📊",
+              "title": "Analytics Dashboard",
+              "description": "Track your brand growth and performance"
+            },
+            {
+              "component": "benefit_item",
+              "_uid": "d25cfc16-ce41-4e50-870b-be6699be4423",
+              "icon": "🤝",
+              "title": "Expert Support",
+              "description": "Connect with beauty industry professionals"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

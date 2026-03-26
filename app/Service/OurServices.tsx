@@ -19,96 +19,113 @@ export default function OurServices() {
 
           <div className="flex gap-4 mt-4">
             <button className="btn-primary font-termina">HIRE GLAZED</button>
-            <button className="btn-outline font-termina">VIEW ALL SERVICES</button>
+            <button className="btn-outline font-termina">
+              VIEW ALL SERVICES
+            </button>
           </div>
         </div>
-        {/* RIGHT SIDE IMAGES (EXACT SAME DESIGN AS REFERENCE) */}
-<div className="relative w-full">
-  <div className="grid grid-cols-2 gap-5 relative w-[85%] ">
-
-    {/* 1 — TOP-LEFT LARGE */}
-    <div>
-      <Image
-        src="/service_1.jpg"
-        alt="service 1"
-        width={500}
-        height={400}
-        className="w-full h-[240px] object-cover rounded-10"
-      />
-    </div>
-
-    {/* 2 — TOP-RIGHT GROUP PHOTO */}
-    <div className="relative top-8 w-[145%]">
-      <Image
-        src="/service_4.jpg"
-        alt="service 2"
-        width={500}
-        height={400}
-        className="w-full h-[180px] object-cover rounded-10"
-      />
-    </div>
-
-    {/* 3 — BOTTOM-LEFT FRUITS PHOTO + WHITE CARD */}
-    <div className="relative left-[93px] pt-20px w-[85%]">
-      <Image
-        src="/service_6.jpg"
-        alt="service 3"
-        width={500}
-        height={400}
-        className="w-full h-[200px] object-cover rounded-10"
-      />
-
-      {/* White floating card */}
-      <div className="absolute -top-7 -left-21 bg-white rounded-xl shadow-lg p-3 flex items-center gap-3">
-        <Image
-          src="/service_5.jpg"
-          alt="avatar"
-          width={55}
-          height={55}
-          className="rounded-md"
-        />
-        <div className="text-[10px] leading-tight">
-          <p className="text-text font-ivy">LOREM IPSUM</p>
-          <p className="text-text font-termina">Lorem Ipsum</p>
-        </div>
-      </div>
-    </div>
-
-    {/* 4 — BOTTOM-RIGHT HAND + PHONE (SHIFTED UP & RIGHT EXACTLY LIKE DESIGN) */}
-    <div className="relative -top-[18px] left-[80px] w-[85%]">
-      <Image
-        src="/service_2.jpg"
-        alt="service 4"
-        width={500}
-        height={400}
-        className="w-full h-[200px] object-cover rounded-10"
-      />
-    </div>
-
-  </div>
-          <div className="flex flex-wrap gap-4 mt-8">
-            {[
-              "CREATIVE & MARKETING",
-              "FORMULATION IDEATION & ASSORTMENT CONCEPT",
-              "THE SHOWROOM/PRODUCTION",
-              "SALES & DISTRIBUTION",
-              "FULFILMENT & OPERATIONS",
-            ].map((item, i) => (
-              <button
-                key={i}
-                className="border border-gray-400 text-[10px] text-black font-termina rounded-10 px-5 py-2 hover:bg-gray-100 transition"
-              >
-                {item}
-              </button>
-            ))}
+        <div className="relative w-full">
+          <div className="grid grid-cols-2 gap-5 relative w-[85%] ">
+            <div>
+              <Image
+                src="/service_1.jpg"
+                alt="service 1"
+                width={500}
+                height={400}
+                className="w-full h-[240px] object-cover rounded-10"
+              />
+            </div>
+            <div className="relative top-8 w-[145%]">
+              <Image
+                src="/service_4.jpg"
+                alt="service 2"
+                width={500}
+                height={400}
+                className="w-full h-[180px] object-cover rounded-10"
+              />
+            </div>
+            <div className="relative left-[93px] pt-20px w-[85%]">
+              <Image
+                src="/service_6.jpg"
+                alt="service 3"
+                width={500}
+                height={400}
+                className="w-full h-[200px] object-cover rounded-10"
+              />
+              <div className="absolute -top-7 -left-21 bg-white rounded-xl shadow-lg p-3 flex items-center gap-3">
+                <Image
+                  src="/service_5.jpg"
+                  alt="avatar"
+                  width={55}
+                  height={55}
+                  className="rounded-md"
+                />
+                <div className="text-[10px] leading-tight">
+                  <p className="text-text font-ivy">LOREM IPSUM</p>
+                  <p className="text-text font-termina">Lorem Ipsum</p>
+                </div>
+              </div>
+            </div>
+            <div className="relative -top-[18px] left-[80px] w-[85%]">
+              <Image
+                src="/service_2.jpg"
+                alt="service 4"
+                width={500}
+                height={400}
+                className="w-full h-[200px] object-cover rounded-10"
+              />
+            </div>
+          </div>
+          <div className="mt-8">
+            <div className="md:hidden w-full">
+              <select className="w-full border border-gray-400 text-[12px] font-termina px-4 py-2 rounded-10 bg-white">
+                {[
+                "CREATIVE & MARKETING",
+                "FORMULATION IDEATION & ASSORTMENT CONCEPT",
+                "THE SHOWROOM/PRODUCTION",
+                "SALES & DISTRIBUTION",
+                "FULFILMENT & OPERATIONS",
+              ].map((item, i) => (
+                <option
+                  key={i}>
+                  {item}
+                </option>
+              ))}
+              </select>
+            </div>
+            <div className="hidden md:flex flex-wrap gap-4 mt-4">
+              {[
+                "CREATIVE & MARKETING",
+                "FORMULATION IDEATION & ASSORTMENT CONCEPT",
+                "THE SHOWROOM/PRODUCTION",
+                "SALES & DISTRIBUTION",
+                "FULFILMENT & OPERATIONS",
+              ].map((item, i) => (
+                <button
+                  key={i}
+                  className="
+        border border-gray-400 
+        text-[10px] 
+        text-black 
+        font-termina 
+        rounded-10 
+        px-5 py-2 
+        transition-all 
+        duration-300
+        hover:bg-gray-100
+        hover:scale-[1.06]
+        hover:shadow-md
+      ">
+                  {item}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
       </div>
     </section>
   );
 }
-
-
 
 // import Image from "next/image";
 
@@ -165,7 +182,7 @@ export default function OurServices() {
 //               height={400}
 //               alt="service 3"
 //               className="w-200 h-130 object-cover rounded-10"
-              
+
 //             />
 //             <div className="absolute -top-6 -left-6 bg-white rounded-xl shadow-md p-3 flex items-center gap-3">
 //               <Image

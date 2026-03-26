@@ -1,0 +1,47 @@
+{
+  "name": "register",
+  "slug": "register",
+  "content": {
+    "component": "page",
+    "_uid": "4a4b0d76-3cf2-498c-bbc3-88816ee41d3c",
+    "body": [
+      {
+        "component": "RegisterForm",
+        "_uid": "6d346f72-591b-4fe5-b9a5-c923d10b31e8",
+        "title": "Create Account",
+        "subtitle": "Join Glazed Gloss Beauty",
+        "login_link_text": "Already have an account? Sign in",
+        "benefits": [
+          {
+            "component": "benefit_item",
+            "_uid": "9442aba1-dea0-4430-ab4b-d09de43454df",
+            "icon": "🎨",
+            "title": "Exclusive Access",
+            "description": "Get early access to new products and services"
+          },
+          {
+            "component": "benefit_item",
+            "_uid": "f1e4f36a-524b-4647-a78b-c2a29599a3ac",
+            "icon": "💼",
+            "title": "Business Tools",
+            "description": "Access professional beauty brand resources"
+          },
+          {
+            "component": "benefit_item",
+            "_uid": "c0da271b-f89e-4a63-b025-47c53938de16",
+            "icon": "📊",
+            "title": "Analytics Dashboard",
+            "description": "Track your brand growth and performance"
+          },
+          {
+            "component": "benefit_item",
+            "_uid": "d25cfc16-ce41-4e50-870b-be6699be4423",
+            "icon": "🤝",
+            "title": "Expert Support",
+            "description": "Connect with beauty industry professionals"
+          }
+        ]
+      }
+    ]
+  }
+}

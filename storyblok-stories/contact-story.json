@@ -1,0 +1,61 @@
+{
+  "name": "contact",
+  "slug": "contact",
+  "content": {
+    "component": "page",
+    "_uid": "e006ba4a-7f8c-4e7c-983f-b8b7a4ae01d5",
+    "body": [
+      {
+        "component": "ContactForm",
+        "_uid": "000f8761-b618-4925-b152-cdaabae4e7a4",
+        "title": "Contact Us",
+        "subtitle": "Get In Touch",
+        "description": "Ready to transform your beauty brand? Let's start the conversation.",
+        "form_title": "Send us a message",
+        "contact_info": [
+          {
+            "component": "contact_info_item",
+            "_uid": "070e67fb-3fb5-49c0-be8c-500093119f61",
+            "icon_type": "location",
+            "title": "Office Location",
+            "content": "Beverly Hills, CA 90210"
+          },
+          {
+            "component": "contact_info_item",
+            "_uid": "8267bc0a-7b0d-42d4-99f9-f6b9b31e07d7",
+            "icon_type": "email",
+            "title": "Email Us",
+            "content": "hello@glazedgloss.com"
+          },
+          {
+            "component": "contact_info_item",
+            "_uid": "ec0f2294-f0af-4367-aac7-801416ee85c9",
+            "icon_type": "phone",
+            "title": "Call Us",
+            "content": "858.353.3220"
+          }
+        ],
+        "business_hours": [
+          {
+            "component": "business_hour",
+            "_uid": "21524f70-2e6c-4a21-922d-ead5bc47d833",
+            "day": "Monday - Friday",
+            "hours": "9:00 AM - 6:00 PM"
+          },
+          {
+            "component": "business_hour",
+            "_uid": "9402c3d5-ffaa-4960-81b6-6b21c56c10f2",
+            "day": "Saturday",
+            "hours": "10:00 AM - 4:00 PM"
+          },
+          {
+            "component": "business_hour",
+            "_uid": "8296beea-1a17-4f04-81ff-39622e111c19",
+            "day": "Sunday",
+            "hours": "Closed"
+          }
+        ]
+      }
+    ]
+  }
+}

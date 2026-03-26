@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
+import { CartProvider } from "@/context/CartContext";
+import SessionProviderWrapper from "@/components/SessionProviderWrapper";
 
 const termina = localFont({
   src: [
     {
       path: "../public/fonts/termina/TerminaTest-Regular.otf",
-     style : "normal" ,
+      style: "normal",
     },
   ],
   variable: "--font-termina",
@@ -34,7 +36,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${termina.variable} ${ivy.variable}`}>
-      <body>{children}</body>
+      <body>
+        <SessionProviderWrapper>
+          <CartProvider>
+            {children}
+          </CartProvider>
+        </SessionProviderWrapper>
+      </body>
     </html>
   );
 }
