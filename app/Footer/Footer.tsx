@@ -116,7 +116,7 @@ export default function ExploreGlazedGloss() {
           </div>
           <div className="flex flex-col items-center justify-center">
             <img
-              src="/logo.png"
+              src="/logo.jpg"
               alt="Glazed Gloss Logo"
               className="w-140 mb-2"
             />

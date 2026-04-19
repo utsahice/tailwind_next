@@ -35,6 +35,18 @@ export async function POST(request: Request) {
         // Save updated data
         fs.writeFileSync(contactFile, JSON.stringify(contacts, null, 2));
 
+        // Send Email via Brevo
+        try {
+            const { sendTransactionalEmail } = await import("@/lib/brevo");
+            await sendTransactionalEmail(
+                data.email,
+                "We've received your message!",
+                `<h1>Hi ${data.name},</h1><p>Thank you for reaching out to Gloss We have received your message and will get back to you shortly.</p>`
+            );
+        } catch (err) {
+            console.error("Email send failed", err);
+        }
+
         return NextResponse.json({ success: true, message: "Contact form submitted successfully" });
     } catch (error) {
         console.error("Error saving contact form:", error);

@@ -47,12 +47,12 @@ export default function OurServices({ blok }: OurServicesProps) {
 
     // Fallback services if none provided
     const fallbackServices = [
-        { _uid: "1", title: "Creative & Marketing", description: "Strategic brand development and marketing solutions", image: { filename: "/service_1.jpg", alt: "Creative Marketing" }, category: "CREATIVE & MARKETING" },
-        { _uid: "2", title: "Formulation & Concept", description: "Product ideation and formulation expertise", image: { filename: "/service_2.jpg", alt: "Formulation" }, category: "FORMULATION IDEATION & ASSORTMENT CONCEPT" },
-        { _uid: "3", title: "Production", description: "High-quality production and manufacturing", image: { filename: "/service_3.jpg", alt: "Production" }, category: "THE SHOWROOM/PRODUCTION" },
-        { _uid: "4", title: "Sales & Distribution", description: "Global retail strategy and distribution networks", image: { filename: "/service_4.jpg", alt: "Sales" }, category: "SALES & DISTRIBUTION" },
-        { _uid: "5", title: "Avatar Service", description: "Expert consultation services", image: { filename: "/service_5.jpg", alt: "Avatar" }, category: "CREATIVE & MARKETING" },
-        { _uid: "6", title: "Fulfilment & Operations", description: "End-to-end operational excellence and logistics", image: { filename: "/service_6.jpg", alt: "Operations" }, category: "FULFILMENT & OPERATIONS" },
+        { _uid: "1", title: "Creative & Marketing", description: "Strategic brand development and marketing solutions", image: { filename: "/img2.jpg", alt: "Creative Marketing" }, category: "CREATIVE & MARKETING" },
+        { _uid: "2", title: "Formulation & Concept", description: "Product ideation and formulation expertise", image: { filename: "/logo.jpg", alt: "Formulation" }, category: "FORMULATION IDEATION & ASSORTMENT CONCEPT" },
+        { _uid: "3", title: "Production", description: "High-quality production and manufacturing", image: { filename: "/img2.jpg", alt: "Production" }, category: "THE SHOWROOM/PRODUCTION" },
+        { _uid: "4", title: "Sales & Distribution", description: "Global retail strategy and distribution networks", image: { filename: "/logo.jpg", alt: "Sales" }, category: "SALES & DISTRIBUTION" },
+        { _uid: "5", title: "Avatar Service", description: "Expert consultation services", image: { filename: "/img2.jpg", alt: "Avatar" }, category: "CREATIVE & MARKETING" },
+        { _uid: "6", title: "Fulfilment & Operations", description: "End-to-end operational excellence and logistics", image: { filename: "/logo.jpg", alt: "Operations" }, category: "FULFILMENT & OPERATIONS" },
     ];
 
     const services = blok.services?.length ? blok.services : fallbackServices;

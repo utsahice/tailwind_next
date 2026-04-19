@@ -21,6 +21,15 @@ export default function GlazedGlossPage() {
             playsInline
             className="w-full h-full object-cover"
           />
+          <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 bg-white/20 backdrop-blur-md px-4 py-3 rounded-2xl shadow-lg border border-white/30">
+            <Image
+              src="/gloss/sign.png"
+              alt="Signature"
+              width={160}
+              height={55}
+              className="w-auto h-auto drop-shadow-xl"
+            />
+          </div>
         </div>
       </div>
       <div className="w-full lg:w-1/2 text-dark px-6 lg:px-0">
@@ -34,13 +43,6 @@ export default function GlazedGlossPage() {
         <p className="text-[15px] font-termina text-gray-700 leading-relaxed mb-6">
           A high-level overview of our retail commercial support includes the five pillars of commercial planning & a 360 degree approach for GLOBAL commerce & product deployment.
         </p>
-        <Image
-          src="/gloss/sign.png"
-          alt="Signature"
-          width={260}
-          height={80}
-          className="w-auto h-auto mb-5"
-        />
         <button className="btn-primary px-6 py-3 font-termina tracking-wide">
           MORE ABOUT GLAZED GLOSS CREATIVE
         </button>

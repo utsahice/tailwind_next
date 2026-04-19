@@ -8,13 +8,13 @@ import { Play, Pause, Volume2, VolumeX } from "lucide-react";
 
 export default function VideoSlider() {
   const videos = [
-    { src: "/gloss/action.mp4", text: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.”" },
-    { src: "/gloss/action.mp4", text: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.”" },
-    { src: "/gloss/action.mp4", text: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.”" },
-    { src: "/gloss/action.mp4", text: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.”" },
-    { src: "/gloss/2.mp4", text: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.”" },
-    { src: "/gloss/action.mp4", text: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.”" },
-    { src: "/gloss/action.mp4", text: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.”" },
+    { src: "/gloss/action.mp4", text: ""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."", thumbnail: "/gloss/img2.jpg" },
+    { src: "/gloss/action.mp4", text: ""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."", thumbnail: "/gloss/img2.jpg" },
+    { src: "/gloss/action.mp4", text: ""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."", thumbnail: "/gloss/img2.jpg" },
+    { src: "/gloss/action.mp4", text: ""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."", thumbnail: "/gloss/img2.jpg" },
+    { src: "/gloss/2.mp4", text: ""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."", thumbnail: "/gloss/img2.jpg" },
+    { src: "/gloss/action.mp4", text: ""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."", thumbnail: "/gloss/img2.jpg" },
+    { src: "/gloss/action.mp4", text: ""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."", thumbnail: "/gloss/img2.jpg" },
   ];
 
   return (
@@ -25,9 +25,9 @@ export default function VideoSlider() {
           pagination={{ clickable: true }}
           spaceBetween={24}
           slidesPerView={1.2}
-          initialSlide={2} 
+          initialSlide={2}
           centeredSlides={true}
-          
+
           breakpoints={{
             640: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
@@ -37,7 +37,7 @@ export default function VideoSlider() {
         >
           {videos.map((video, index) => (
             <SwiperSlide key={index}>
-              <VideoCard src={video.src} text={video.text} />
+              <VideoCard src={video.src} text={video.text} thumbnail={video.thumbnail} />
             </SwiperSlide>
           ))}
         </Swiper>
@@ -46,7 +46,7 @@ export default function VideoSlider() {
   );
 }
 
-function VideoCard({ src, text }: { src: string; text: string }) {
+function VideoCard({ src, text, thumbnail }: { src: string; text: string; thumbnail: string }) {
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const [playing, setPlaying] = useState(false);
   const [muted, setMuted] = useState(true);
@@ -72,6 +72,7 @@ function VideoCard({ src, text }: { src: string; text: string }) {
       <video
         ref={videoRef}
         src={src}
+        poster={thumbnail}
         muted={muted}
         loop
         playsInline

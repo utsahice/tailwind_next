@@ -21,23 +21,10 @@ interface RetailPartnersProps {
 }
 
 export default function RetailPartners({ blok }: RetailPartnersProps) {
-    // Fallback logos from public folder
+    // Fallback logos from public folder (only img2 and logo per request)
     const fallbackLogos = [
-        "/retail/Group1.svg",
-        "/retail/Group2.svg",
-        "/retail/Group3.svg",
-        "/retail/Group5.svg",
-        "/retail/Group6.svg",
-        "/retail/Group7.svg",
-        "/retail/Group8.svg",
-        "/retail/Group9.svg",
-        "/retail/Group10.svg",
-        "/retail/Group11.svg",
-        "/retail/Group12.svg",
-        "/retail/Group13.svg",
-        "/retail/Group14.svg",
-        "/retail/Group15.svg",
-        "/retail/Group16.svg",
+        "/img2.jpg",
+        "/logo.jpg",
     ];
 
     const logos = blok.partners?.length ? blok.partners : fallbackLogos.map((src, i) => ({

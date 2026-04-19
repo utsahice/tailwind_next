@@ -53,7 +53,7 @@ export default function BeautyExperts({ blok }: BeautyExpertsProps) {
     ];
 
     // Fallback expert images
-    const fallbackImages = ["/expert/1.jpg", "/expert/2.jpg", "/expert/3.jpg"];
+    const fallbackImages = ["/img2.jpg", "/logo.jpg"];
 
     const features = blok.features?.length ? blok.features : fallbackFeatures;
     const expertImages = blok.expert_images?.length ? blok.expert_images : fallbackImages.map((src, i) => ({

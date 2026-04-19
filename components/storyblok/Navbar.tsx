@@ -74,7 +74,7 @@ export default function Navbar({ blok }: NavbarProps) {
                 <div className="flex flex-col items-center justify-center">
                     <Link href="/">
                         <Image
-                            src={blok.logo?.filename || "/logo.png"}
+                            src={blok.logo?.filename || "/logo.jpg"}
                             alt={blok.logo?.alt || "Glazed Gloss Logo"}
                             width={72}
                             height={48}
@@ -114,7 +114,7 @@ export default function Navbar({ blok }: NavbarProps) {
                                                 <p className="font-ivy text-base font-bold text-black leading-tight">{session.user.name}</p>
                                                 <p className="font-termina text-[10px] text-gray-500 uppercase tracking-tighter mt-1">{session.user.email}</p>
                                             </div>
-                                            
+
                                             <Link
                                                 href="/profile"
                                                 className="flex items-center gap-4 px-5 py-3 hover:bg-lime/50 transition-colors group"

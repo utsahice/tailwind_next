@@ -96,7 +96,7 @@ export default function ProductsPage() {
                                     {/* Image container */}
                                     <Link href={`/products/${product.handle}`} className="block relative overflow-hidden bg-white" style={{ aspectRatio: "1/1" }}>
                                         <Image
-                                            src={product.image || "/logo.png"}
+                                            src={product.image || "/logo.jpg"}
                                             alt={product.title}
                                             fill
                                             sizes="(max-width: 768px) 50vw, 25vw"
@@ -127,8 +127,8 @@ export default function ProductsPage() {
                                             <button
                                                 onClick={() => handleAddToCart(product)}
                                                 className={`flex-1 py-2.5 rounded-10 font-termina text-[10px] tracking-widest transition-all duration-300 ${addedIds.has(product.id)
-                                                        ? "bg-dark text-white"
-                                                        : "bg-yello text-dark hover:bg-dark hover:text-white"
+                                                    ? "bg-dark text-white"
+                                                    : "bg-yello text-dark hover:bg-dark hover:text-white"
                                                     }`}
                                             >
                                                 {addedIds.has(product.id) ? "✓ ADDED" : "ADD TO CART"}

@@ -4,39 +4,6 @@ import { authOptions } from "../auth/[...nextauth]/route";
 import pool from "@/lib/db";
 import { ResultSetHeader } from "mysql2";
 
-// Salesforce API Configuration (ensure proper ENV setup)
-async function pushToSalesforce(name: string, email: string, orderId: number) {
-  const sfUrl = process.env.SALESFORCE_INSTANCE_URL;
-  const token = process.env.SALESFORCE_ACCESS_TOKEN; // Get real access token dynamically in production
-
-  if (!token) {
-    console.warn("SF token not configured, skipping.");
-    return null;
-  }
-
-  const response = await fetch(`${sfUrl}/services/data/v58.0/sobjects/Lead`, {
-    method: "POST",
-    headers: {
-      "Authorization": `Bearer ${token}`,
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-      LastName: name,
-      Email: email,
-      Company: "Ecommerce Store",
-      Description: `Website Order Placed. Local Order ID: ${orderId}`
-    })
-  });
-
-  if (response.ok) {
-    const data = await response.json();
-    return data.id; // Record ID from Salesforce
-  } else {
-    console.error("Salesforce failure:", await response.text());
-  }
-  return null;
-}
-
 export async function POST(req: Request) {
   const session = await getServerSession(authOptions);
   
@@ -56,15 +23,16 @@ export async function POST(req: Request) {
 
     const orderId = result.insertId;
 
-    // 2. Push to Salesforce
-    const salesforceId = await pushToSalesforce(session.user.name || "Customer", session.user.email!, orderId);
-
-    // 3. Update Order with Salesforce ID if sync was successful
-    if (salesforceId) {
-      await pool.query(
-        "UPDATE orders SET salesforce_id = ? WHERE id = ?",
-        [salesforceId, orderId]
-      );
+    // Send Email via Brevo
+    try {
+        const { sendTransactionalEmail } = await import("@/lib/brevo");
+        await sendTransactionalEmail(
+            session.user.email!,
+            "Order Confirmation - Gloss",
+            `<h1>Order Received!</h1><p>Thank you for your purchase. Your order ID is <strong>#${orderId}</strong>.</p><p>Total Payment: $${totalPayment}</p><p>Shipping Address: ${address}</p>`
+        );
+    } catch (err) {
+        console.error("Email confirmation failed", err);
     }
 
     return NextResponse.json({ success: true, orderId });

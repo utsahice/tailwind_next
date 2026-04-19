@@ -37,7 +37,7 @@ export default function Layout({ children }: LayoutProps) {
                     setNavbarData({
                         _uid: 'navbar_fallback',
                         component: 'Navbar',
-                        logo: { filename: '/logo.png', alt: 'Glazed Gloss Creative Collective' },
+                        logo: { filename: '/logo.jpg', alt: 'Glazed Gloss Creative Collective' },
                         nav_links: [
                             { _uid: 'nav_1', label: 'Home', url: '/', is_external: false },
                             { _uid: 'nav_2', label: 'About', url: '/about', is_external: false },
@@ -75,7 +75,7 @@ export default function Layout({ children }: LayoutProps) {
                     setFooterData({
                         _uid: 'footer_fallback',
                         component: 'Footer',
-                        logo: { filename: '/logo.png', alt: 'Glazed Gloss Creative Collective' },
+                        logo: { filename: '/logo.jpg', alt: 'Glazed Gloss Creative Collective' },
                         newsletter_title: 'JOIN OUR NEWSLETTER',
                         newsletter_description: 'Download your Free Beauty Content Calendar when you sign up for exclusive industry insights.',
                         description: 'Join our movement and transform your beauty brand with industry-leading expertise and global reach.',

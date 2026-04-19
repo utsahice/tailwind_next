@@ -47,13 +47,11 @@ export default function Hero() {
               </div>
               <div className="flex flex-col items-center justify-center">
                 <Image
-                  src="/logo.png"
-                  alt="GG logo"
-                  width={72}
+                  src="/logo.jpg"
                   height={48}
                   className="object-contain"
                 />
-                
+
               </div>
               <div className="flex items-center justify-end gap-7">
                 <div className="hidden sm:flex items-center gap-3  text-sm">

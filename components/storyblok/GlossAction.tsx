@@ -25,6 +25,7 @@ export default function GlossAction({ blok }: GlossActionProps) {
                 <div className="absolute inset-0 w-100vh h-100vh overflow-hidden">
                     <video
                         src={blok.background_image?.filename || "/gloss/action.mp4"}
+                        poster={blok.background_image?.filename || "/gloss/img2.jpg"}
                         autoPlay
                         loop
                         muted

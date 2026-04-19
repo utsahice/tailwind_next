@@ -61,7 +61,7 @@ export default function CartDrawer() {
                                 <div key={item.variantId} className="flex gap-4 py-4 border-b border-gray-100">
                                     <div className="relative w-20 h-20 bg-gray-100 rounded-lg overflow-hidden flex-shrink-0">
                                         <Image
-                                            src={item.image || "/logo.png"}
+                                            src={item.image || "/logo.jpg"}
                                             alt={item.title}
                                             fill
                                             className="object-cover"

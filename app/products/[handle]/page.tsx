@@ -48,7 +48,7 @@ export default function ProductDetailPage() {
             title: product.title,
             variantTitle: v?.title || "Default Title",
             price: v?.price || product.price,
-            image: product.images[0] || "/logo.png",
+            image: product.images[0] || "/logo.jpg",
             handle,
         });
         setAdded(true);
@@ -101,7 +101,7 @@ export default function ProductDetailPage() {
                             {/* Main image */}
                             <div className="relative bg-white overflow-hidden" style={{ aspectRatio: "1/1" }}>
                                 <Image
-                                    src={product.images[selectedImage] || "/logo.png"}
+                                    src={product.images[selectedImage] || "/logo.jpg"}
                                     alt={product.title}
                                     fill
                                     sizes="(max-width: 1024px) 100vw, 50vw"
@@ -118,8 +118,8 @@ export default function ProductDetailPage() {
                                             key={i}
                                             onClick={() => setSelectedImage(i)}
                                             className={`relative flex-shrink-0 overflow-hidden transition-all duration-200 ${selectedImage === i
-                                                    ? "ring-2 ring-dark opacity-100"
-                                                    : "opacity-50 hover:opacity-80"
+                                                ? "ring-2 ring-dark opacity-100"
+                                                : "opacity-50 hover:opacity-80"
                                                 }`}
                                             style={{ width: 72, height: 72 }}
                                         >
@@ -170,10 +170,10 @@ export default function ProductDetailPage() {
                                                 onClick={() => setSelectedVariant(i)}
                                                 disabled={!v.available}
                                                 className={`px-5 py-2 font-termina text-[11px] rounded-10 border transition-all duration-200 ${selectedVariant === i
-                                                        ? "border-dark bg-dark text-white"
-                                                        : v.available
-                                                            ? "border-dark/30 text-dark hover:border-dark"
-                                                            : "border-gray/20 text-gray/40 cursor-not-allowed line-through"
+                                                    ? "border-dark bg-dark text-white"
+                                                    : v.available
+                                                        ? "border-dark/30 text-dark hover:border-dark"
+                                                        : "border-gray/20 text-gray/40 cursor-not-allowed line-through"
                                                     }`}
                                             >
                                                 {v.title}
@@ -189,8 +189,8 @@ export default function ProductDetailPage() {
                                     onClick={handleAddToCart}
                                     disabled={!isAvailable}
                                     className={`flex-1 py-4 rounded-10 font-termina text-[12px] tracking-widest transition-all duration-300 disabled:opacity-40 disabled:cursor-not-allowed ${added
-                                            ? "bg-dark text-white"
-                                            : "bg-yello text-dark hover:bg-dark hover:text-white"
+                                        ? "bg-dark text-white"
+                                        : "bg-yello text-dark hover:bg-dark hover:text-white"
                                         }`}
                                 >
                                     {added ? "✓ ADDED TO CART" : isAvailable ? "ADD TO CART" : "OUT OF STOCK"}

@@ -55,14 +55,14 @@ export default function Footer({ blok }: FooterProps) {
     if (!blok || (blok.component !== 'Footer' && blok.component !== 'Global')) {
         console.log('⚠️ Footer component not found or wrong type, using fallback');
     }
-    // Fallback footer images from original design
+    // Fallback footer images from original design (keep img2 and logo only)
     const footerImages = [
-        "/footer/1.png",
-        "/footer/2.png",
-        "/footer/3.png",
-        "/footer/4.png",
-        "/footer/5.png",
-        "/footer/6.png"
+        "/img2.jpg",
+        "/logo.jpg",
+        "/img2.jpg",
+        "/logo.jpg",
+        "/img2.jpg",
+        "/logo.jpg"
     ];
 
     const socialIcons = [
@@ -190,7 +190,7 @@ export default function Footer({ blok }: FooterProps) {
                     <div className="flex flex-col items-center justify-center">
                         <Link href="/">
                             <Image
-                                src={blok.logo?.filename || "/logo.png"}
+                                src={blok.logo?.filename || "/logo.jpg"}
                                 alt={blok.logo?.alt || "Glazed Gloss Logo"}
                                 width={140}
                                 height={100}

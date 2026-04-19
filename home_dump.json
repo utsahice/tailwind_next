@@ -1,0 +1,878 @@
+{
+  "_uid": "6a2e8226-8bf3-47c5-95e8-b0853738def9",
+  "body": [
+    {
+      "_uid": "hero_1769927901835",
+      "title": "",
+      "cta_link": "#contact",
+      "cta_text": "GET STARTED",
+      "subtitle": "",
+      "component": "Hero",
+      "description": "Transforming brands into global icons. We leverage our capabilities and proprietary technology to design, market, distribute, scale, and accelerate brands on a global scale.",
+      "background_image": {
+        "id": 140231261118531,
+        "alt": "",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/288253207803581/3024x4032/d198d146ee/service_3.jpg",
+        "copyright": "",
+        "fieldtype": "asset",
+        "meta_data": {},
+        "is_external_url": false
+      },
+      "_editable": "<!--#storyblok#{\"name\": \"Hero\", \"space\": \"288253207803581\", \"uid\": \"hero_1769927901835\", \"id\": \"140223635408021\"}-->"
+    },
+    {
+      "_uid": "services_1769927901835",
+      "title": "OUR SERVICES",
+      "services": [
+        {
+          "_uid": "service_1_1769927901835",
+          "image": {
+            "id": 140231261098050,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/288253207803581/3024x4032/0a1e9a4a6d/service_1.jpg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "title": "BRANDING & IDENTITY",
+          "component": "service_item",
+          "description": "Complete brand development from concept to execution",
+          "_editable": "<!--#storyblok#{\"name\": \"service_item\", \"space\": \"288253207803581\", \"uid\": \"service_1_1769927901835\", \"id\": \"140223635408021\"}-->"
+        },
+        {
+          "_uid": "service_2_1769927901835",
+          "image": {
+            "id": 140231261040704,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/288253207803581/1024x1533/7c8927612f/service_2.jpg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "title": "DIGITAL MARKETING",
+          "component": "service_item",
+          "description": "Strategic digital campaigns that drive results",
+          "_editable": "<!--#storyblok#{\"name\": \"service_item\", \"space\": \"288253207803581\", \"uid\": \"service_2_1769927901835\", \"id\": \"140223635408021\"}-->"
+        },
+        {
+          "_uid": "service_3_1769927901835",
+          "image": {
+            "id": 140231261118531,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/288253207803581/3024x4032/d198d146ee/service_3.jpg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "title": "PRODUCT DEVELOPMENT",
+          "component": "service_item",
+          "description": "From ideation to market-ready products",
+          "_editable": "<!--#storyblok#{\"name\": \"service_item\", \"space\": \"288253207803581\", \"uid\": \"service_3_1769927901835\", \"id\": \"140223635408021\"}-->"
+        },
+        {
+          "_uid": "service_4_1769927901835",
+          "image": {
+            "id": 140230847107131,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/288253207803581/3024x4032/a084f823fa/1.jpg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "title": "RETAIL STRATEGY",
+          "component": "service_item",
+          "description": "Comprehensive retail planning and execution",
+          "_editable": "<!--#storyblok#{\"name\": \"service_item\", \"space\": \"288253207803581\", \"uid\": \"service_4_1769927901835\", \"id\": \"140223635408021\"}-->"
+        },
+        {
+          "_uid": "service_5_1769927901835",
+          "image": {
+            "id": 140231262355526,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/288253207803581/4096x2731/005f6ca553/service_5.jpg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "title": "CONTENT CREATION",
+          "component": "service_item",
+          "description": "Engaging content that tells your brand story",
+          "_editable": "<!--#storyblok#{\"name\": \"service_item\", \"space\": \"288253207803581\", \"uid\": \"service_5_1769927901835\", \"id\": \"140223635408021\"}-->"
+        },
+        {
+          "_uid": "service_6_1769927901835",
+          "image": {
+            "id": 140231261343812,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/288253207803581/2496x3744/a1f4a71942/service_6.jpg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "title": "GLOBAL DISTRIBUTION",
+          "component": "service_item",
+          "description": "Worldwide reach for your beauty brand",
+          "_editable": "<!--#storyblok#{\"name\": \"service_item\", \"space\": \"288253207803581\", \"uid\": \"service_6_1769927901835\", \"id\": \"140223635408021\"}-->"
+        }
+      ],
+      "subtitle": "Glazed Gloss Creative Collective was founded by a seasoned brand builder driven by a singular purpose: to accelerate your brand vision from inception to fruition and to accelerate brand growth.",
+      "component": "OurServices",
+      "_editable": "<!--#storyblok#{\"name\": \"OurServices\", \"space\": \"288253207803581\", \"uid\": \"services_1769927901835\", \"id\": \"140223635408021\"}-->"
+    },
+    {
+      "_uid": "work_1769927901835",
+      "title": "OUR WORK",
+      "subtitle": "Featured projects and success stories",
+      "component": "OurWork",
+      "work_items": [
+        {
+          "_uid": "work_1_1769927901835",
+          "image": {
+            "id": 140245411917909,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/288253207803581/2731x4096/0f39823711/work1.jpg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "title": "VANITY PLANET",
+          "category": "BRANDING",
+          "component": "work_item",
+          "description": "Complete brand transformation and global launch",
+          "_editable": "<!--#storyblok#{\"name\": \"work_item\", \"space\": \"288253207803581\", \"uid\": \"work_1_1769927901835\", \"id\": \"140223635408021\"}-->"
+        },
+        {
+          "_uid": "work_2_1769927901835",
+          "image": {
+            "id": 140230846984248,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/288253207803581/2160x3240/38c6973c00/work2.jpg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "title": "GLOBAL NOURISH",
+          "category": "PRODUCTION",
+          "component": "work_item",
+          "description": "Product development and market strategy",
+          "_editable": "<!--#storyblok#{\"name\": \"work_item\", \"space\": \"288253207803581\", \"uid\": \"work_2_1769927901835\", \"id\": \"140223635408021\"}-->"
+        },
+        {
+          "_uid": "work_3_1769927901835",
+          "image": {
+            "id": 140230846996537,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/288253207803581/1633x2449/e84df005d7/work3.jpg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "title": "HIGHER EDUCATION SKINCARE",
+          "category": "FULL SERVICE",
+          "component": "work_item",
+          "description": "Full-service brand development",
+          "_editable": "<!--#storyblok#{\"name\": \"work_item\", \"space\": \"288253207803581\", \"uid\": \"work_3_1769927901835\", \"id\": \"140223635408021\"}-->"
+        },
+        {
+          "_uid": "work_4_1769927901835",
+          "image": {
+            "id": 140230846976054,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/288253207803581/2704x3380/76ec03d8d6/work4.jpg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "title": "KOVE",
+          "category": "BRANDING",
+          "component": "work_item",
+          "description": "Brand identity and digital presence",
+          "_editable": "<!--#storyblok#{\"name\": \"work_item\", \"space\": \"288253207803581\", \"uid\": \"work_4_1769927901835\", \"id\": \"140223635408021\"}-->"
+        }
+      ],
+      "_editable": "<!--#storyblok#{\"name\": \"OurWork\", \"space\": \"288253207803581\", \"uid\": \"work_1769927901835\", \"id\": \"140223635408021\"}-->"
+    },
+    {
+      "_uid": "partners_1769927901835",
+      "title": "OUR RETAIL PARTNERS",
+      "partners": [
+        {
+          "_uid": "partner_1_1769927901835",
+          "logo": {
+            "id": 140230847041594,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/288253207803581/86x50/a3661bdccc/group19.svg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "name": "Partner 1",
+          "component": "partner_item",
+          "_editable": "<!--#storyblok#{\"name\": \"partner_item\", \"space\": \"288253207803581\", \"uid\": \"partner_1_1769927901835\", \"id\": \"140223635408021\"}-->"
+        },
+        {
+          "_uid": "partner_2_1769927901835",
+          "logo": {
+            "id": 140230846742580,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/288253207803581/155x40/3a0c8a76bb/group18.svg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "name": "Partner 2",
+          "component": "partner_item",
+          "_editable": "<!--#storyblok#{\"name\": \"partner_item\", \"space\": \"288253207803581\", \"uid\": \"partner_2_1769927901835\", \"id\": \"140223635408021\"}-->"
+        },
+        {
+          "_uid": "partner_3_1769927901835",
+          "logo": {
+            "id": 140230846742581,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/288253207803581/263x40/0a30b21e56/group16.svg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "name": "Partner 3",
+          "component": "partner_item",
+          "_editable": "<!--#storyblok#{\"name\": \"partner_item\", \"space\": \"288253207803581\", \"uid\": \"partner_3_1769927901835\", \"id\": \"140223635408021\"}-->"
+        },
+        {
+          "_uid": "partner_4_1769927901835",
+          "logo": {
+            "id": 140230846718003,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/288253207803581/172x40/b8a724993f/group14.svg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "name": "Partner 4",
+          "component": "partner_item",
+          "_editable": "<!--#storyblok#{\"name\": \"partner_item\", \"space\": \"288253207803581\", \"uid\": \"partner_4_1769927901835\", \"id\": \"140223635408021\"}-->"
+        },
+        {
+          "_uid": "partner_5_1769927901835",
+          "logo": {
+            "id": 140230846705714,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/288253207803581/87x47/ccdf285384/group17.svg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "name": "Partner 5",
+          "component": "partner_item",
+          "_editable": "<!--#storyblok#{\"name\": \"partner_item\", \"space\": \"288253207803581\", \"uid\": \"partner_5_1769927901835\", \"id\": \"140223635408021\"}-->"
+        },
+        {
+          "_uid": "partner_6_1769927901835",
+          "logo": {
+            "id": 140230846480431,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/288253207803581/174x40/aa143eed76/group9.svg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "name": "Partner 6",
+          "component": "partner_item",
+          "_editable": "<!--#storyblok#{\"name\": \"partner_item\", \"space\": \"288253207803581\", \"uid\": \"partner_6_1769927901835\", \"id\": \"140223635408021\"}-->"
+        },
+        {
+          "_uid": "1600a9c0-f18a-4751-ac7f-96f35f733dfc",
+          "logo": {
+            "id": 140230846701617,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/288253207803581/418x26/051297d41f/group15.svg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "name": "Partner 7 ",
+          "component": "partner_item",
+          "_editable": "<!--#storyblok#{\"name\": \"partner_item\", \"space\": \"288253207803581\", \"uid\": \"1600a9c0-f18a-4751-ac7f-96f35f733dfc\", \"id\": \"140223635408021\"}-->"
+        },
+        {
+          "_uid": "6908c66e-75da-4878-b77e-8a4042d025eb",
+          "logo": {
+            "id": 140230846480432,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/288253207803581/324x35/58482623b4/group6.svg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "name": "Partner 8",
+          "component": "partner_item",
+          "_editable": "<!--#storyblok#{\"name\": \"partner_item\", \"space\": \"288253207803581\", \"uid\": \"6908c66e-75da-4878-b77e-8a4042d025eb\", \"id\": \"140223635408021\"}-->"
+        }
+      ],
+      "subtitle": "Trusted by leading beauty retailers worldwide",
+      "component": "RetailPartners",
+      "_editable": "<!--#storyblok#{\"name\": \"RetailPartners\", \"space\": \"288253207803581\", \"uid\": \"partners_1769927901835\", \"id\": \"140223635408021\"}-->"
+    },
+    {
+      "_uid": "glazed_1769927901835",
+      "title": "We're Glazed Gloss",
+      "cta_text": "MORE ABOUT GLAZED GLOSS CREATIVE",
+      "subtitle": "Who We Are",
+      "component": "GlazedGloss",
+      "video_url": "/gloss/2.mp4",
+      "main_image": {
+        "id": 140231261343812,
+        "alt": "",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/288253207803581/2496x3744/a1f4a71942/service_6.jpg",
+        "copyright": "",
+        "fieldtype": "asset",
+        "meta_data": {},
+        "is_external_url": false
+      },
+      "description": "Based in Beverly Hills, CA, the hub of the film and commercial industry, the executive team of GLAZED GLOSS CREATIVE COLLECTIVE brings a wealth of historical expertise in retail sales and execution. Each C-Suite executive has over 25 years of experience within the core retail team.",
+      "signature_image": {
+        "id": 140231264583751,
+        "alt": "",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/288253207803581/400x711/301bcce040/hero_bg.gif",
+        "copyright": "",
+        "fieldtype": "asset",
+        "meta_data": {},
+        "is_external_url": false
+      },
+      "_editable": "<!--#storyblok#{\"name\": \"GlazedGloss\", \"space\": \"288253207803581\", \"uid\": \"glazed_1769927901835\", \"id\": \"140223635408021\"}-->"
+    },
+    {
+      "_uid": "transforming_1769927901835",
+      "title": "TRUSTED BY GLOBAL BRAND EXPERTS",
+      "subtitle": "Transforming Brands Into Global Icons",
+      "component": "TransformingBrands",
+      "statistics": [
+        {
+          "_uid": "stat_1_1769927901835",
+          "label": "YEARS IN GGC INDUSTRY",
+          "number": "25",
+          "component": "statistic_item",
+          "_editable": "<!--#storyblok#{\"name\": \"statistic_item\", \"space\": \"288253207803581\", \"uid\": \"stat_1_1769927901835\", \"id\": \"140223635408021\"}-->"
+        },
+        {
+          "_uid": "stat_2_1769927901835",
+          "label": "INCREASE IN SALES",
+          "number": "200%",
+          "component": "statistic_item",
+          "_editable": "<!--#storyblok#{\"name\": \"statistic_item\", \"space\": \"288253207803581\", \"uid\": \"stat_2_1769927901835\", \"id\": \"140223635408021\"}-->"
+        },
+        {
+          "_uid": "stat_3_1769927901835",
+          "label": "FASTER PRODUCTION & ASSET DELIVERY",
+          "number": "5X",
+          "component": "statistic_item",
+          "_editable": "<!--#storyblok#{\"name\": \"statistic_item\", \"space\": \"288253207803581\", \"uid\": \"stat_3_1769927901835\", \"id\": \"140223635408021\"}-->"
+        },
+        {
+          "_uid": "stat_4_1769927901835",
+          "label": "OPTIMIZED RETAIL STRATEGY & GLOBAL DISTRIBUTION",
+          "number": "3X",
+          "component": "statistic_item",
+          "_editable": "<!--#storyblok#{\"name\": \"statistic_item\", \"space\": \"288253207803581\", \"uid\": \"stat_4_1769927901835\", \"id\": \"140223635408021\"}-->"
+        }
+      ],
+      "description": "We leverage our capabilities and proprietary technology to design, market, distribute, scale, and accelerate brands on a global scale.",
+      "background_image": {
+        "id": 140231261040704,
+        "alt": "",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/288253207803581/1024x1533/7c8927612f/service_2.jpg",
+        "copyright": "",
+        "fieldtype": "asset",
+        "meta_data": {},
+        "is_external_url": false
+      },
+      "_editable": "<!--#storyblok#{\"name\": \"TransformingBrands\", \"space\": \"288253207803581\", \"uid\": \"transforming_1769927901835\", \"id\": \"140223635408021\"}-->"
+    },
+    {
+      "_uid": "experts_1769927901835",
+      "title": "Hub for Beauty Experts",
+      "cta_text": "SUBSCRIBE AND GET ACCESS",
+      "features": [
+        {
+          "_uid": "feature_1_1769927901836",
+          "title": "Saves Time",
+          "number": "1.",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+        },
+        {
+          "_uid": "feature_2_1769927901836",
+          "title": "Boosts Engagement",
+          "number": "2.",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+        },
+        {
+          "_uid": "feature_3_1769927901836",
+          "title": "Gloss Up Your Feed",
+          "number": "3.",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+        }
+      ],
+      "subtitle": "The Ultimate Content Toolkit",
+      "component": "BeautyExperts",
+      "description": "Access our comprehensive library of beauty content, templates, and resources designed specifically for beauty professionals.",
+      "expert_images": [
+        {
+          "bio": "",
+          "_uid": "f6d2939b-2d98-4016-a04f-005d2043ba5a",
+          "name": "",
+          "image": {
+            "id": 140231261118531,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/288253207803581/3024x4032/d198d146ee/service_3.jpg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "title": "",
+          "component": "expert_item",
+          "_editable": "<!--#storyblok#{\"name\": \"expert_item\", \"space\": \"288253207803581\", \"uid\": \"f6d2939b-2d98-4016-a04f-005d2043ba5a\", \"id\": \"140223635408021\"}-->"
+        },
+        {
+          "bio": "",
+          "_uid": "8d678eaf-aac9-4d8f-9faa-2a35929eb590",
+          "name": "",
+          "image": {
+            "id": 140231261118531,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/288253207803581/3024x4032/d198d146ee/service_3.jpg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "title": "",
+          "component": "expert_item",
+          "_editable": "<!--#storyblok#{\"name\": \"expert_item\", \"space\": \"288253207803581\", \"uid\": \"8d678eaf-aac9-4d8f-9faa-2a35929eb590\", \"id\": \"140223635408021\"}-->"
+        },
+        {
+          "bio": "",
+          "_uid": "c2c020c4-ad3c-4dce-a9a8-1087f0019c0b",
+          "name": "",
+          "image": {
+            "id": 140231261118531,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/288253207803581/3024x4032/d198d146ee/service_3.jpg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "title": "",
+          "component": "expert_item",
+          "_editable": "<!--#storyblok#{\"name\": \"expert_item\", \"space\": \"288253207803581\", \"uid\": \"c2c020c4-ad3c-4dce-a9a8-1087f0019c0b\", \"id\": \"140223635408021\"}-->"
+        }
+      ],
+      "_editable": "<!--#storyblok#{\"name\": \"BeautyExperts\", \"space\": \"288253207803581\", \"uid\": \"experts_1769927901835\", \"id\": \"140223635408021\"}-->"
+    },
+    {
+      "_uid": "branding_1769927901836",
+      "title": "Branding and Sales is in our DNA",
+      "subtitle": "See what global leading brands are saying about us",
+      "component": "Branding",
+      "description": "With thousands of retail partnerships—niche boutiques, spas, lifestyle destinations, and big-box retailers—our team is ready to build and optimize your business Globally.",
+      "brand_images": [
+        {
+          "_uid": "09085159-0892-499f-b228-583de1ae30b7",
+          "image": {
+            "id": 140229996007450,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/288253207803581/2716x4096/2f3b033106/user3.jpg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "title": "hey",
+          "component": "branding_item",
+          "description": "hey",
+          "_editable": "<!--#storyblok#{\"name\": \"branding_item\", \"space\": \"288253207803581\", \"uid\": \"09085159-0892-499f-b228-583de1ae30b7\", \"id\": \"140223635408021\"}-->"
+        }
+      ],
+      "_editable": "<!--#storyblok#{\"name\": \"Branding\", \"space\": \"288253207803581\", \"uid\": \"branding_1769927901836\", \"id\": \"140223635408021\"}-->"
+    },
+    {
+      "_uid": "action_1769927901836",
+      "title": "Experience Glazed Gloss in Action",
+      "cta_link": "#contact",
+      "cta_text": "Your Brand: Elevated",
+      "subtitle": "Let's Create Something Amazing Together",
+      "component": "GlossAction",
+      "description": "A glimpse into our creative process, impact, passion and strategic creativity for transforming brands",
+      "background_image": {
+        "id": 140230846976054,
+        "alt": "",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/288253207803581/2704x3380/76ec03d8d6/work4.jpg",
+        "copyright": "",
+        "fieldtype": "asset",
+        "meta_data": {},
+        "is_external_url": false
+      },
+      "_editable": "<!--#storyblok#{\"name\": \"GlossAction\", \"space\": \"288253207803581\", \"uid\": \"action_1769927901836\", \"id\": \"140223635408021\"}-->"
+    },
+    {
+      "_uid": "videos_1769927901836",
+      "title": "BEHIND THE SCENES",
+      "videos": [
+        {
+          "_uid": "video_1_1769927901836",
+          "title": "Brand Launch Campaign",
+          "component": "video_item",
+          "thumbnail": {
+            "id": 140231264583751,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/288253207803581/400x711/301bcce040/hero_bg.gif",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "video_url": "/gloss/action.mp4",
+          "_editable": "<!--#storyblok#{\"name\": \"video_item\", \"space\": \"288253207803581\", \"uid\": \"video_1_1769927901836\", \"id\": \"140223635408021\"}-->"
+        },
+        {
+          "_uid": "video_2_1769927901836",
+          "title": "Product Development Process",
+          "component": "video_item",
+          "thumbnail": {
+            "id": 140231264583751,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/288253207803581/400x711/301bcce040/hero_bg.gif",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "video_url": "/gloss/2.mp4",
+          "_editable": "<!--#storyblok#{\"name\": \"video_item\", \"space\": \"288253207803581\", \"uid\": \"video_2_1769927901836\", \"id\": \"140223635408021\"}-->"
+        },
+        {
+          "_uid": "video_3_1769927901836",
+          "title": "Client Success Story",
+          "component": "video_item",
+          "thumbnail": {
+            "id": 140231264583751,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/288253207803581/400x711/301bcce040/hero_bg.gif",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "video_url": "/gloss/action.mp4",
+          "_editable": "<!--#storyblok#{\"name\": \"video_item\", \"space\": \"288253207803581\", \"uid\": \"video_3_1769927901836\", \"id\": \"140223635408021\"}-->"
+        },
+        {
+          "_uid": "video_4_1769927901836",
+          "title": "Global Expansion",
+          "component": "video_item",
+          "thumbnail": {
+            "id": 140231264583751,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/288253207803581/400x711/301bcce040/hero_bg.gif",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "video_url": "/gloss/action.mp4",
+          "_editable": "<!--#storyblok#{\"name\": \"video_item\", \"space\": \"288253207803581\", \"uid\": \"video_4_1769927901836\", \"id\": \"140223635408021\"}-->"
+        },
+        {
+          "_uid": "video_5_1769927901836",
+          "title": "Innovation Showcase",
+          "component": "video_item",
+          "thumbnail": {
+            "id": 140231264583751,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/288253207803581/400x711/301bcce040/hero_bg.gif",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "video_url": "/gloss/2.mp4",
+          "_editable": "<!--#storyblok#{\"name\": \"video_item\", \"space\": \"288253207803581\", \"uid\": \"video_5_1769927901836\", \"id\": \"140223635408021\"}-->"
+        }
+      ],
+      "subtitle": "See Our Work in Action",
+      "component": "VideoSlider",
+      "_editable": "<!--#storyblok#{\"name\": \"VideoSlider\", \"space\": \"288253207803581\", \"uid\": \"videos_1769927901836\", \"id\": \"140223635408021\"}-->"
+    },
+    {
+      "_uid": "footer_1769927901836",
+      "logo": {
+        "id": 140231260893245,
+        "alt": "",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/288253207803581/447x420/571c997bcd/logo.png",
+        "copyright": "",
+        "fieldtype": "asset",
+        "meta_data": {},
+        "is_external_url": false
+      },
+      "component": "Footer",
+      "description": "Transforming brands into global icons through innovative beauty solutions and strategic partnerships.",
+      "contact_info": {
+        "email": "hello@glazedgloss.com",
+        "phone": "+1 (555) 123-4567",
+        "address": "Beverly Hills, CA 90210"
+      },
+      "footer_links": [
+        {
+          "url": "/services",
+          "_uid": "link_1_1769927901836",
+          "title": "Services",
+          "component": "footer_link",
+          "_editable": "<!--#storyblok#{\"name\": \"footer_link\", \"space\": \"288253207803581\", \"uid\": \"link_1_1769927901836\", \"id\": \"140223635408021\"}-->"
+        },
+        {
+          "url": "/work",
+          "_uid": "link_2_1769927901836",
+          "title": "Work",
+          "component": "footer_link",
+          "_editable": "<!--#storyblok#{\"name\": \"footer_link\", \"space\": \"288253207803581\", \"uid\": \"link_2_1769927901836\", \"id\": \"140223635408021\"}-->"
+        },
+        {
+          "url": "/about",
+          "_uid": "link_3_1769927901836",
+          "title": "About",
+          "component": "footer_link",
+          "_editable": "<!--#storyblok#{\"name\": \"footer_link\", \"space\": \"288253207803581\", \"uid\": \"link_3_1769927901836\", \"id\": \"140223635408021\"}-->"
+        },
+        {
+          "url": "/contact",
+          "_uid": "link_4_1769927901836",
+          "title": "Contact",
+          "component": "footer_link",
+          "_editable": "<!--#storyblok#{\"name\": \"footer_link\", \"space\": \"288253207803581\", \"uid\": \"link_4_1769927901836\", \"id\": \"140223635408021\"}-->"
+        }
+      ],
+      "social_links": [
+        {
+          "url": "https://instagram.com/glazedgloss",
+          "_uid": "social_1_1769927901836",
+          "icon": {
+            "alt": "Instagram",
+            "filename": "/footer/1.png"
+          },
+          "platform": "Instagram",
+          "component": "social_link",
+          "_editable": "<!--#storyblok#{\"name\": \"social_link\", \"space\": \"288253207803581\", \"uid\": \"social_1_1769927901836\", \"id\": \"140223635408021\"}-->"
+        },
+        {
+          "url": "https://linkedin.com/company/glazedgloss",
+          "_uid": "social_2_1769927901836",
+          "icon": {
+            "alt": "LinkedIn",
+            "filename": "/footer/2.png"
+          },
+          "platform": "LinkedIn",
+          "component": "social_link",
+          "_editable": "<!--#storyblok#{\"name\": \"social_link\", \"space\": \"288253207803581\", \"uid\": \"social_2_1769927901836\", \"id\": \"140223635408021\"}-->"
+        },
+        {
+          "url": "https://twitter.com/glazedgloss",
+          "_uid": "social_3_1769927901836",
+          "icon": {
+            "alt": "Twitter",
+            "filename": "/footer/3.png"
+          },
+          "platform": "Twitter",
+          "component": "social_link",
+          "_editable": "<!--#storyblok#{\"name\": \"social_link\", \"space\": \"288253207803581\", \"uid\": \"social_3_1769927901836\", \"id\": \"140223635408021\"}-->"
+        },
+        {
+          "url": "https://facebook.com/glazedgloss",
+          "_uid": "social_4_1769927901836",
+          "icon": {
+            "alt": "Facebook",
+            "filename": "/footer/4.png"
+          },
+          "platform": "Facebook",
+          "component": "social_link",
+          "_editable": "<!--#storyblok#{\"name\": \"social_link\", \"space\": \"288253207803581\", \"uid\": \"social_4_1769927901836\", \"id\": \"140223635408021\"}-->"
+        },
+        {
+          "url": "https://youtube.com/glazedgloss",
+          "_uid": "social_5_1769927901836",
+          "icon": {
+            "alt": "YouTube",
+            "filename": "/footer/5.png"
+          },
+          "platform": "YouTube",
+          "component": "social_link",
+          "_editable": "<!--#storyblok#{\"name\": \"social_link\", \"space\": \"288253207803581\", \"uid\": \"social_5_1769927901836\", \"id\": \"140223635408021\"}-->"
+        },
+        {
+          "url": "https://tiktok.com/glazedgloss",
+          "_uid": "social_6_1769927901836",
+          "icon": {
+            "alt": "TikTok",
+            "filename": "/footer/6.png"
+          },
+          "platform": "TikTok",
+          "component": "social_link",
+          "_editable": "<!--#storyblok#{\"name\": \"social_link\", \"space\": \"288253207803581\", \"uid\": \"social_6_1769927901836\", \"id\": \"140223635408021\"}-->"
+        }
+      ],
+      "_editable": "<!--#storyblok#{\"name\": \"Footer\", \"space\": \"288253207803581\", \"uid\": \"footer_1769927901836\", \"id\": \"140223635408021\"}-->"
+    }
+  ],
+  "component": "page",
+  "_editable": "<!--#storyblok#{\"name\": \"page\", \"space\": \"288253207803581\", \"uid\": \"6a2e8226-8bf3-47c5-95e8-b0853738def9\", \"id\": \"140223635408021\"}-->"
+}

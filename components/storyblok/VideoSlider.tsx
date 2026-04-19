@@ -41,10 +41,12 @@ export default function VideoSlider({ blok }: VideoSliderProps) {
 
     const videos = blok.videos?.length ? blok.videos.map(video => ({
         src: video.video_url || video.thumbnail.filename || "/gloss/action.mp4",
-        text: `"${video.title}"`
+        text: `"${video.title}"`,
+        thumbnail: video.thumbnail.filename || "/gloss/img2.jpg"
     })) : fallbackVideos.map((video, i) => ({
         src: video.src,
-        text: `"Experience ${i + 1}"`
+        text: `"Experience ${i + 1}"`,
+        thumbnail: "/gloss/img2.jpg"
     }));
 
     return (
@@ -66,7 +68,7 @@ export default function VideoSlider({ blok }: VideoSliderProps) {
                 >
                     {videos.map((video, index) => (
                         <SwiperSlide key={index}>
-                            <VideoCard src={video.src} text={video.text} />
+                            <VideoCard src={video.src} text={video.text} thumbnail={video.thumbnail} />
                         </SwiperSlide>
                     ))}
                 </Swiper>
@@ -75,7 +77,7 @@ export default function VideoSlider({ blok }: VideoSliderProps) {
     );
 }
 
-function VideoCard({ src, text }: { src: string; text: string }) {
+function VideoCard({ src, text, thumbnail }: { src: string; text: string; thumbnail: string }) {
     const videoRef = useRef<HTMLVideoElement | null>(null);
     const [playing, setPlaying] = useState(false);
     const [muted, setMuted] = useState(true);
@@ -101,6 +103,7 @@ function VideoCard({ src, text }: { src: string; text: string }) {
             <video
                 ref={videoRef}
                 src={src}
+                poster={thumbnail}
                 muted={muted}
                 loop
                 playsInline

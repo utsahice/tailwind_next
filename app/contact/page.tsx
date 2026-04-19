@@ -1,9 +1,11 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Layout from "@/components/Layout";
 import Image from "next/image";
+import { useSession } from "next-auth/react";
 
 export default function ContactPage() {
+    const { data: session } = useSession();
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -14,9 +16,65 @@ export default function ContactPage() {
     });
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
+    const [errors, setErrors] = useState<Record<string, string>>({});
+    const [isOpen, setIsOpen] = useState(false);
+    const [currentTimeIST, setCurrentTimeIST] = useState("");
+
+    // Pre-fill form if user is logged in
+    useEffect(() => {
+        if (session?.user) {
+            setFormData(prev => ({
+                ...prev,
+                name: session.user?.name || prev.name,
+                email: session.user?.email || prev.email
+            }));
+        }
+    }, [session]);
+
+    // IST Status Check
+    useEffect(() => {
+        const checkStatus = () => {
+            const now = new Date();
+            // Convert to IST (UTC+5:30)
+            const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+            const istDate = new Date(utc + (3600000 * 5.5));
+            
+            const hours = istDate.getHours();
+            const minutes = istDate.getMinutes();
+            const day = istDate.getDay(); // 0 is Sunday, 1-5 is Mon-Fri, 6 is Sat
+            
+            setCurrentTimeIST(istDate.toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit', hour12: true }));
+
+            let open = false;
+            if (day >= 1 && day <= 5) { // Mon-Fri
+                if (hours >= 9 && hours < 18) open = true;
+            } else if (day === 6) { // Sat
+                if (hours >= 10 && hours < 16) open = true;
+            }
+            // Sun (0) is always closed
+            setIsOpen(open);
+        };
+
+        checkStatus();
+        const interval = setInterval(checkStatus, 60000);
+        return () => clearInterval(interval);
+    }, []);
+
+    const validateForm = () => {
+        let newErrors: Record<string, string> = {};
+        if (!formData.name) newErrors.name = "Full name is required";
+        if (!formData.email || !/\S+@\S+\.\S+/.test(formData.email)) newErrors.email = "Valid email is required";
+        if (formData.phone && !/^\+?[\d\s-]{10,}$/.test(formData.phone)) newErrors.phone = "Invalid phone number";
+        if (!formData.message || formData.message.length < 10) newErrors.message = "Message must be at least 10 characters";
+        
+        setErrors(newErrors);
+        return Object.keys(newErrors).length === 0;
+    };
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+        if (!validateForm()) return;
+
         setIsSubmitting(true);
         setSubmitStatus("idle");
 
@@ -41,7 +99,16 @@ export default function ContactPage() {
     };
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-        setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
+        const { name, value } = e.target;
+        setFormData(prev => ({ ...prev, [name]: value }));
+        // Clear error when typing
+        if (errors[name]) {
+            setErrors(prev => {
+                const newErrs = { ...prev };
+                delete newErrs[name];
+                return newErrs;
+            });
+        }
     };
 
     return (
@@ -76,10 +143,10 @@ export default function ContactPage() {
                                         name="name"
                                         value={formData.name}
                                         onChange={handleChange}
-                                        required
-                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-yello transition-colors"
+                                        className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:border-yello transition-colors ${errors.name ? 'border-red-500' : 'border-gray-300'}`}
                                         placeholder="John Doe"
                                     />
+                                    {errors.name && <p className="text-red-500 text-xs mt-1 font-termina">{errors.name}</p>}
                                 </div>
 
                                 <div>
@@ -91,10 +158,10 @@ export default function ContactPage() {
                                         name="email"
                                         value={formData.email}
                                         onChange={handleChange}
-                                        required
-                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-yello transition-colors"
+                                        className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:border-yello transition-colors ${errors.email ? 'border-red-500' : 'border-gray-300'}`}
                                         placeholder="john@example.com"
                                     />
+                                    {errors.email && <p className="text-red-500 text-xs mt-1 font-termina">{errors.email}</p>}
                                 </div>
 
                                 <div>
@@ -106,9 +173,10 @@ export default function ContactPage() {
                                         name="phone"
                                         value={formData.phone}
                                         onChange={handleChange}
-                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-yello transition-colors"
-                                        placeholder="+1 (555) 000-0000"
+                                        className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:border-yello transition-colors ${errors.phone ? 'border-red-500' : 'border-gray-300'}`}
+                                        placeholder="+91 00000 00000"
                                     />
+                                    {errors.phone && <p className="text-red-500 text-xs mt-1 font-termina">{errors.phone}</p>}
                                 </div>
 
                                 <div>
@@ -154,11 +222,11 @@ export default function ContactPage() {
                                         name="message"
                                         value={formData.message}
                                         onChange={handleChange}
-                                        required
                                         rows={5}
-                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-yello transition-colors resize-none"
+                                        className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:border-yello transition-colors resize-none ${errors.message ? 'border-red-500' : 'border-gray-300'}`}
                                         placeholder="Tell us about your project..."
                                     />
+                                    {errors.message && <p className="text-red-500 text-xs mt-1 font-termina">{errors.message}</p>}
                                 </div>
 
                                 <button
@@ -235,7 +303,18 @@ export default function ContactPage() {
 
                             {/* Business Hours */}
                             <div className="bg-lime rounded-2xl p-8 mt-8">
-                                <h3 className="font-ivy text-2xl text-black mb-4">Business Hours</h3>
+                                <div className="flex justify-between items-center mb-6">
+                                    <h3 className="font-ivy text-2xl text-black">Business Hours</h3>
+                                    <div className={`px-3 py-1 rounded-full text-[10px] font-termina uppercase tracking-widest flex items-center gap-2 ${isOpen ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'}`}>
+                                        <span className={`w-1.5 h-1.5 rounded-full ${isOpen ? 'bg-green-500 animate-pulse' : 'bg-red-500'}`}></span>
+                                        {isOpen ? 'Open Now' : 'Closed Now'}
+                                    </div>
+                                </div>
+                                
+                                <p className="text-[10px] font-termina text-gray-500 mb-4 uppercase tracking-tighter">
+                                    Current Time (IST): {currentTimeIST}
+                                </p>
+
                                 <div className="space-y-2 font-termina text-sm">
                                     <div className="flex justify-between">
                                         <span className="text-gray-700">Monday - Friday</span>
@@ -250,6 +329,9 @@ export default function ContactPage() {
                                         <span className="text-black font-medium">Closed</span>
                                     </div>
                                 </div>
+                                <p className="text-[10px] font-termina text-gray-500 mt-4 italic">
+                                    * All times are in Indian Standard Time (IST)
+                                </p>
                             </div>
                         </div>
                     </div>

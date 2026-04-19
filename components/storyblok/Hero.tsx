@@ -79,7 +79,7 @@ export default function Hero({ blok }: HeroProps) {
                             </div>
                             <div className="flex flex-col items-center justify-center">
                                 <Image
-                                    src="/logo.png"
+                                    src="/logo.jpg"
                                     alt="GG logo"
                                     width={72}
                                     height={48}
